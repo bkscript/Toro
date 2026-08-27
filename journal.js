@@ -15,14 +15,14 @@ export function renderStoryRow(post) {
 
 export function renderJournal(posts, topicLabels) {
   return {
-    title: "MarwarMade Journal | Handmade Home Stories",
+    title: "MarwarMade | Wooden Decor Journal",
     activeNav: "#/",
     html: `
       <section class="journal-hero">
         <div>
-          <p class="eyebrow">The MarwarMade journal</p>
-          <h1>Make home feel<br /><em>like yours.</em></h1>
-          <p class="hero-subcopy">Thoughtful guides for homes filled with warmth, craft and a sense of place.</p>
+          <p class="eyebrow">MarwarMade wooden decor journal</p>
+          <h1>Wooden craft,<br /><em>made personal.</em></h1>
+          <p class="hero-subcopy">Hand-carved wall decor, wooden furniture and the details that give a home its character.</p>
         </div>
       </section>
 
@@ -33,8 +33,8 @@ export function renderJournal(posts, topicLabels) {
 
       <section class="journal-list" aria-labelledby="latest-stories">
         <div class="list-heading">
-          <h2 id="latest-stories">Latest stories</h2>
-          <p>${posts.length} thoughtful reads</p>
+          <h2 id="latest-stories">Wooden decor guides</h2>
+          <p>${posts.length} product stories</p>
         </div>
         <ol class="story-list">${posts.map(renderStoryRow).join("")}</ol>
       </section>`
@@ -50,13 +50,13 @@ export function renderTopic(posts, topicLabels, topic) {
     activeNav: `#/topic/${topic}`,
     html: `
       <section class="topic-view">
-        <a class="back-link" href="#/">← All stories</a>
-        <p class="eyebrow">MarwarMade journal</p>
+        <a class="back-link" href="#/">← All articles</a>
+        <p class="eyebrow">MarwarMade wooden decor</p>
         <h1>${label}</h1>
         <p>${topicDescription(topic)}</p>
         <div class="list-heading">
           <h2>${selectedPosts.length} ${selectedPosts.length === 1 ? "story" : "stories"}</h2>
-          <p>Read slowly</p>
+          <p>Browse the collection</p>
         </div>
         <ol class="story-list">${selectedPosts.map(renderStoryRow).join("")}</ol>
       </section>`
@@ -65,10 +65,9 @@ export function renderTopic(posts, topicLabels, topic) {
 
 function topicDescription(topic) {
   const descriptions = {
-    "home-decor": "Considered ideas for bringing colour, texture and handmade character into the rooms you live in every day.",
-    gifting: "Thoughtful gift ideas for new homes, new rituals and the people who make a space feel warm.",
-    craft: "Stories behind the materials, techniques and traditions that make handmade objects worth keeping.",
-    "slow-living": "Simple ways to make everyday routines feel calmer, warmer and more at home."
+    "wall-decor": "Helpful guides to sizing, styling and buying hand-carved wall pieces, jaali panels and wooden mirror frames.",
+    "wooden-accents": "Useful guidance for wooden trunks, elephant figures, chaukidar dolls and hand-carved jewelry boxes.",
+    furniture: "Understand the real dimensions, finish, use and care of reclaimed wood furniture before you buy."
   };
   return descriptions[topic];
 }

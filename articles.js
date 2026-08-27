@@ -1,209 +1,328 @@
 export const posts = [
   {
-    slug: "style-block-print-cushions",
+    slug: "wooden-carved-bull-head-wall-decor",
     number: "01",
-    category: "Home decor",
-    topic: "home-decor",
-    date: "August 18, 2026",
-    readTime: "6 min read",
-    title: "How to Style Block-Print Cushions Without Making a Room Feel Busy",
-    excerpt: "A simple way to mix colour, pattern and texture so handmade cushions feel collected, not crowded.",
-    dek: "Block print has movement, character and warmth. The secret is giving every pattern enough quiet space to be noticed.",
-    intro: "A block-print cushion does not need a room full of matching prints to belong. It needs a few calm companions: a grounded colour, an honest texture and a little breathing room.",
-    palette: ["#b55034", "#2d5265", "#dcad50"],
-    cta: "Bring quiet pattern home with handblock cushion covers made for layering.",
-    sections: [
-      { heading: "Start with one anchor", body: ["Choose the cushion that will set the room's direction before adding anything else. It may have a larger floral motif, a deep indigo ground or a warm rust border. Place this anchor first, then let the other covers answer it rather than compete with it.", "For a three-cushion sofa arrangement, one patterned cushion, one textured solid and one smaller supporting print is usually enough. You do not need identical fabrics for harmony; you need one repeated colour or a shared mood."] },
-      { heading: "Use a calm base", body: ["Pattern reads best against a steady backdrop. Natural linen, a plain cotton throw, a cane chair or a neutral sofa gives block-print work the space it needs. If your seating is already colourful, choose a print with more ivory or muted earth tones instead of adding another strong ground colour.", "This is also why a handmade cushion can feel more elevated than a fully printed room. The small irregularities in the print stay visible when the rest of the setting is restrained."] },
-      { heading: "Mix scale, not every colour", body: ["When two prints are the same size, they tend to fight for attention. Pair one large motif with a smaller but simpler pattern, such as a stripe, small booti or fine check. Let the boldest print appear only once or twice in a compact seating area.", "You can repeat a colour without repeating a pattern. A muted red in one cushion can be echoed by a thin border, a tassel or a book spine nearby. That small repetition makes the arrangement feel considered."] },
-      { heading: "Edit after you arrange", body: ["Step back, take a photograph and remove one cushion if the sofa begins to feel too dressed. Handmade pieces have presence; often the most beautiful arrangement is the one with one fewer thing in it.", "Rotate covers by season instead of displaying everything at once. Your favourites will feel new again, and each piece gets its own moment."] }
-    ]
-  },
-  {
-    slug: "warm-boho-living-room-ideas",
-    number: "02",
-    category: "Home decor",
-    topic: "home-decor",
-    date: "August 14, 2026",
-    readTime: "7 min read",
-    title: "12 Warm Boho Living Room Ideas That Feel Grown-Up",
-    excerpt: "A softer, more collected take on bohemian decor—built with natural materials, not visual clutter.",
-    dek: "The best boho rooms feel lived-in rather than styled all at once. Start with warmth, then add personality in slow layers.",
-    intro: "Warm boho decor is less about filling every corner and more about choosing materials that become better with use—washed cotton, hand-finished wood, old brass and woven fibre.",
-    palette: ["#c36b42", "#a58a5b", "#315244"],
-    cta: "Explore small handmade details that add warmth without taking over the room.",
-    sections: [
-      { heading: "Let natural materials lead", body: ["Start with two or three materials that make a room feel settled: jute underfoot, timber at eye level and cotton where you sit. They give the space texture before you introduce colour. A woven basket beside a sofa can do more for warmth than another decorative object on a shelf.", "Choose pieces with visible grain, weave or stitch. Texture is what keeps a neutral room from feeling flat, and it makes the space comfortable without a lot of extra styling."] },
-      { heading: "Build a quieter colour story", body: ["Think of the desert after rain: clay, faded rose, turmeric, olive and chalky cream. Pick two dominant colours and use the others in small doses. A rust cushion, ochre book cover and tiny brass accent can be enough to make a room feel sun-warmed.", "Avoid using every warm colour at the same strength. Keep the walls and larger furniture calm, then let textiles carry the richer tones."] },
-      { heading: "Make one collected corner", body: ["Instead of spreading small decor across the entire room, build one personal vignette. A low stool, a lamp, a few books and a bowl can become the visual centre of a reading corner. The surrounding areas will feel calmer because that corner holds the detail.", "Use objects that have a reason to be there: a basket for throws, a tray for tea, a carved box for remotes. Practicality makes the style feel believable."] },
-      { heading: "Leave room for the everyday", body: ["A room becomes inviting when it can handle a cup of tea, a stack of magazines and friends sitting cross-legged. Do not place every object out of reach or reserve every surface for display.", "Boho at its best is relaxed. Let the room show a little life, then edit gently at the end of the day rather than trying to make it perfect."] }
-    ]
-  },
-  {
-    slug: "decorate-with-brass-diyas",
-    number: "03",
-    category: "Craft stories",
-    topic: "craft",
-    date: "August 10, 2026",
-    readTime: "5 min read",
-    title: "How to Decorate With Brass Diyas Beyond Diwali",
-    excerpt: "Use a diya as a small source of ritual, light and warmth through every season.",
-    dek: "A brass diya need not wait for a festival. Used simply, it brings a gentle pause to an ordinary evening.",
-    intro: "The beauty of a diya is not just the flame. It is the small act of preparing a corner, lighting it and letting the room settle for a moment.",
-    palette: ["#a74730", "#c99c35", "#634533"],
-    cta: "Find hand-finished brass accents for your everyday rituals.",
-    sections: [
-      { heading: "Give it a daily place", body: ["Keep one diya on a small tray near the entry, on a prayer shelf or beside a window. When it has a regular home, it becomes part of the room rather than festival storage. A simple cotton cloth or low wooden coaster beneath it is enough.", "Avoid turning it into a crowded display. The metal, the flame and a little open space are already complete."] },
-      { heading: "Use light in small doses", body: ["One diya makes a dining table feel softer at dusk; two can frame a balcony threshold. Use it where you want the evening to slow down, not as a substitute for all the lights in the room.", "For an intimate dinner, set the diya slightly away from the centre so conversation and serving remain easy. Its glow will travel farther than you expect."] },
-      { heading: "Pair brass with humble materials", body: ["Brass shines more beautifully next to simple textures: raw wood, terracotta, handmade paper and undyed cotton. These pairings keep it warm and tactile instead of overly formal.", "If the surface is glossy stone or glass, add a small woven mat or wooden tray to soften the contrast."] },
-      { heading: "Care without over-polishing", body: ["Let brass develop a gentle patina if you enjoy its older, softer look. Wipe away oil after use and dry it well; polish only when you want brighter shine. The changing finish is part of its life at home.", "A diya that carries a few marks from use often feels more meaningful than one kept untouched in a cabinet."] }
-    ]
-  },
-  {
-    slug: "indian-home-decor-ideas",
-    number: "04",
-    category: "Home decor",
-    topic: "home-decor",
-    date: "August 6, 2026",
-    readTime: "8 min read",
-    title: "Indian Home Decor Ideas for a Space That Feels Personal",
-    excerpt: "Bring in Indian craft through texture, function and story—not themed clutter.",
-    dek: "A home can reflect Indian craft without looking like a souvenir shop. Let meaningful materials lead the conversation.",
-    intro: "The most lasting interiors borrow from a place with sensitivity. They use craft as part of everyday life, not as a costume applied to a room.",
-    palette: ["#924431", "#d3a44a", "#466354"],
-    cta: "Discover handmade objects with everyday purpose and regional character.",
-    sections: [
-      { heading: "Choose one craft language", body: ["Begin with a material or technique you truly enjoy: handblock print, cane, brass, blue pottery or carved wood. This creates a thread through the room. You can still mix pieces from different regions, but one visible language keeps the mix from feeling random.", "For example, indigo block print can be echoed with a small blue ceramic bowl and a woven natural-fibre lamp. The room will feel connected without needing everything to match."] },
-      { heading: "Use useful objects first", body: ["A printed tablecloth, storage basket, bedside lamp or serving tray earns its place every day. Functional craft invites touch and use, which is how a home becomes personal over time.", "Decorative pieces can follow, but they work best when they are few. A small brass bowl on a stack of books can hold its own when there is not a dozen other objects competing beside it."] },
-      { heading: "Balance richness with blank space", body: ["Indian textiles and surfaces often have wonderful detail. Give that detail a quieter neighbour: a plain wall, an unprinted chair, an open shelf. Blank space is not empty; it helps the pieces you love look intentional.", "This balance is especially helpful in smaller homes. One patterned runner can define a dining table more elegantly than covering every surface."] },
-      { heading: "Collect slowly", body: ["Buy the piece that makes you pause rather than buying to complete a room in a weekend. Over time, your home gathers a more honest mix of gifts, travels, useful finds and objects made by people whose work you value.", "A layered home has memory. Let your decor make room for that."] }
-    ]
-  },
-  {
-    slug: "jute-basket-styling-ideas",
-    number: "05",
-    category: "Home decor",
-    topic: "home-decor",
-    date: "August 2, 2026",
-    readTime: "5 min read",
-    title: "7 Easy Jute Basket Styling Ideas for Every Room",
-    excerpt: "The hardworking storage piece that makes a home look calmer at the same time.",
-    dek: "A jute basket is a small interior shortcut: it adds texture, hides clutter and keeps useful things close at hand.",
-    intro: "The best decor objects are often the ones that solve a real problem. A woven basket can catch daily mess, soften a hard corner and make storage feel part of the room.",
-    palette: ["#ae7a4b", "#6e6043", "#d8ba83"],
-    cta: "See woven storage made to keep everyday spaces beautifully useful.",
-    sections: [
-      { heading: "Place one beside the sofa", body: ["A medium basket beside a sofa is an easy home for folded throws, extra cushions or children's books. It keeps the room ready for use without asking you to hide everything away before guests arrive.", "Choose a low, wide shape for throws and a taller basket for rolled blankets. The silhouette should match what it needs to hold."] },
-      { heading: "Use baskets to soften corners", body: ["Hard furniture and straight walls can make an empty corner feel unfinished. A rounded woven basket brings in a softer line. Add a leafy branch or a long-stemmed dried arrangement and the corner feels considered in minutes.", "Keep it simple: one basket and one natural element are often enough."] },
-      { heading: "Make routines visible but tidy", body: ["Put a small basket near the front door for scarves, umbrellas or reusable bags. In a bedroom, use one for laundry or extra pillows. In a bathroom, it can hold rolled towels or clean cloths.", "When the basket has a clear job, it reduces visual clutter instead of becoming a place where random things disappear."] },
-      { heading: "Repeat the weave lightly", body: ["If you use a jute basket in one room, repeat the natural-fibre note somewhere else with a placemat, shade or small tray. This is enough to create rhythm without making the home feel themed.", "A little texture goes a long way. Let the basket remain useful, not precious."] }
-    ]
-  },
-  {
-    slug: "rajasthani-handicrafts-guide",
-    number: "06",
-    category: "Craft stories",
-    topic: "craft",
-    date: "July 28, 2026",
+    category: "Wooden Wall Decor",
+    topic: "wall-decor",
+    date: "August 28, 2026",
     readTime: "9 min read",
-    title: "A Beginner's Guide to Rajasthani Handicrafts at Home",
-    excerpt: "Understand the materials and making traditions behind the pieces you choose.",
-    dek: "From print to metalwork, Rajasthan's craft traditions carry colour, patience and skill in equal measure.",
-    intro: "Knowing a little about how a piece is made changes the way you live with it. It shifts a cushion, lamp or box from a decorative purchase into a connection with a real process.",
-    palette: ["#b3442c", "#2c5266", "#e0ac43"],
-    cta: "Browse pieces that celebrate the makers and materials behind Rajasthan's craft traditions.",
+    title: "Wooden Carved Bull Head Wall Decor: A Hand-Painted Statement for Your Wall",
+    excerpt: "Bring bold colour, hand-carved character and a memorable focal point to an entryway, living room or café wall.",
+    dek: "This is not a filler accessory. A hand-painted wooden bull head is for a home that wants craft, confidence and a real conversation piece.",
+    intro: "A carved wooden bull head gives a plain wall an immediate point of view. Its value lies in the handwork: the carved contours, brush-painted finish and natural variation that make every piece feel individual rather than mass-produced.",
+    palette: ["#9c3d2c", "#d6a23f", "#254f5a"],
+    cta: "Check current availability and the real finish of a wooden bull head for your feature wall.",
+    images: [
+      "Main front view of the complete bull head against a clean, plain wall",
+      "Close-up of the carved horns, facial details and hand-painted brushwork",
+      "Lifestyle image above an entry console or living-room sideboard",
+      "Scale image with a tape measure or furniture reference beside the piece"
+    ],
+    buyingChecklist: [
+      "State the wood type, exact height and width, depth from the wall and approximate weight.",
+      "Show the rear hook or mounting system and explain the suitable wall fixing clearly.",
+      "Hand-painted colour, wood grain and brushwork can vary slightly; show the actual available piece in photos.",
+      "Share dispatch time, safe-packaging details and the real return or damage-reporting terms before payment."
+    ],
     sections: [
-      { heading: "Look for the hand in the work", body: ["Handmade does not mean identical. In block printing, you may notice a small shift in the repeat or an uneven depth of colour. In carved wood, grain and tool marks make every surface slightly different. These are signs of process, not flaws to correct.", "When buying craft, inspect the material and finishing rather than expecting machine-like sameness. A piece should feel thoughtfully made and sturdy enough to live with."] },
-      { heading: "Know the material", body: ["Cotton, brass, mango wood, clay and natural fibre all age differently. Cotton softens with washing; brass can darken; wood needs a dry environment; woven fibre prefers gentle cleaning. Choose a material that fits the way you use your home.", "This practical understanding helps you choose well. A beautiful object becomes more valuable when you know how to care for it without fear."] },
-      { heading: "Use craft in ordinary moments", body: ["A block-print napkin at breakfast, a brass diya at dusk or a carved box on your work desk keeps craft close to daily life. It does not need to be reserved for visitors or festivals.", "The more naturally you use a piece, the more it becomes part of your home's story."] },
-      { heading: "Buy with context", body: ["Read about the technique, ask where a material comes from and choose makers or businesses that share their process clearly. Context creates respect for the work and helps you avoid treating craft as a passing trend.", "A thoughtful purchase can bring beauty home while supporting a living tradition."] }
+      { heading: "Where a bull head has the most impact", body: ["Give this wall piece enough quiet space to work. An entry console, a simple living-room wall, a dining corner or a stair landing are all strong options. In a compact room, avoid placing it inside a crowded gallery wall; one bold focal point usually looks far more considered than ten small distractions.", "A low wooden console, a terracotta vessel or a simple table lamp beneath it will ground the composition. A deep-painted piece stands out beautifully on a pale wall, while a natural or light finish can create contrast against olive, charcoal or warm clay paint."] },
+      { heading: "Why the hand-painted detail matters", body: ["A hand-painted bull head has movement that a flat, identical factory finish cannot offer. The brush direction, colour depth and small irregularities make the carving feel alive. That is why close-up photography matters: buyers should be able to see the character they are paying for, not only a distant styled image.", "Good selling copy should be equally clear about what it is not. This is decorative wooden art, not animal material. Clear material information, multiple-angle photos and an honest description of its handmade variation build far more trust than exaggerated claims."] },
+      { heading: "Easy ways to style it", body: ["Pair the piece with indigo textiles, woven jute, aged brass or raw wood for a warm craft-led interior. In a modern home, keep the setting minimal: a clean console and one lamp let the colour and silhouette do all the work. In a more layered home, a simple textile runner can quietly connect its colours to the rest of the room.", "Avoid hanging another large animal-inspired piece beside it. Let this be the single visual statement on the wall. Showing this restraint in a product lifestyle image helps a buyer imagine the result in their own home and reduces the hesitation that often comes before a decor purchase."] },
+      { heading: "What to check before you order", body: ["Mark the proposed size on your wall with paper tape before ordering. It is the quickest way to judge whether the horns, height and projection feel right for the room. If children or pets use the space, secure mounting and a sensible hanging height matter as much as appearance.", "Use a dry, soft cloth for regular cleaning and keep carved wood away from persistent dampness, harsh chemicals and direct weather exposure. Final care guidance should always match the actual wood and finish used in the product, so confirm those details on the listing before purchase."] }
     ]
   },
   {
-    slug: "housewarming-gift-ideas",
+    slug: "wooden-carved-deer-head-wall-decor",
+    number: "02",
+    category: "Wooden Wall Decor",
+    topic: "wall-decor",
+    date: "August 27, 2026",
+    readTime: "8 min read",
+    title: "Wooden Carved Deer Head Wall Decor: A Refined Rustic Accent",
+    excerpt: "Use a carved wooden deer head to add height, a nature-inspired silhouette and a refined rustic note to your wall.",
+    dek: "A decorative wooden deer head brings a graceful animal-inspired form home without using animal material or turning the room into a theme.",
+    intro: "A wooden deer head works best when it feels intentional rather than theatrical. The calm face, carved ears and branching antlers add shape to a wall, while the wood finish keeps the overall effect warmer and more grounded than a glossy decorative object.",
+    palette: ["#77513c", "#c08b45", "#5a6b52"],
+    cta: "Explore the available wooden deer head finish and find the right scale for your wall.",
+    images: [
+      "Clean front image showing the full deer head and antlers",
+      "Detail image of antler carving, paintwork and wood texture",
+      "Lifestyle image above a reading chair or beside a bedroom headboard",
+      "Back view showing the mounting point, depth and protected packaging"
+    ],
+    buyingChecklist: [
+      "Describe it as decorative wooden wall art and clearly state that no animal-derived material is used.",
+      "List the full width including antlers, total height, wall projection and approximate weight.",
+      "Show real colour and finish variation rather than relying on heavily edited photographs.",
+      "Explain the mounting hardware, wall suitability and protection for the more delicate carved areas."
+    ],
+    sections: [
+      { heading: "The rooms that suit a deer head best", body: ["A carved deer head can work in rustic, Scandinavian, bohemian and classic interiors because its material is warm and its silhouette is clean. On a limewashed or off-white wall it reads softly; on deep green, charcoal or clay paint it becomes more dramatic. The surrounding furniture decides which version you get.", "In a bedroom, place it on a side wall or dressing corner instead of directly over the bed unless mounting and placement are fully secure. A study, lobby or café feature wall often gives the antlers enough height and breathing room to be seen properly."] },
+      { heading: "Sell the product with the right language", body: ["A hunting-inspired silhouette may be part of the visual history, but the product description should be straightforward: this is a carved wooden decor piece. Do not imply taxidermy, real antler, antique origin or exotic material unless it can be proven. Clear language prevents disappointment and makes the product more respectful.", "A reliable listing answers practical questions before the customer asks them. Show front, side and rear images; say whether hooks and screws are included; and explain what kind of wall fixing is needed. This information turns a beautiful object into an easy purchase."] },
+      { heading: "How to keep the styling elegant", body: ["Use a long plant, a narrow console or a wood-and-linen reading corner to create balance beneath the piece. Leave some open wall around the antlers, because the empty space is what lets the shape feel graceful rather than busy.", "If you already have lots of framed art, keep it on another wall. A deer head deserves its own moment. A good lifestyle photograph should demonstrate this simple rule, helping buyers visualize the product without feeling they must copy an expensive entire room."] },
+      { heading: "Care and safe mounting", body: ["Dust carved details with a dry, soft brush or cloth and keep the piece away from prolonged dampness and harsh direct sunlight. Water should not sit in carved grooves, and final care instructions should always follow the actual finish used by the maker.", "Mounting must match the wall type and real product weight. A decor piece is only successful when it is safe in a lived-in home, so do not hide installation requirements behind a pretty product photo. State them clearly and recommend professional help for heavy walls or complex surfaces."] }
+    ]
+  },
+  {
+    slug: "antique-wooden-cow-face-wall-hanging",
+    number: "03",
+    category: "Wooden Wall Decor",
+    topic: "wall-decor",
+    date: "August 26, 2026",
+    readTime: "9 min read",
+    title: "Antique-Look Wooden Cow Face Wall Hanging: A Warm Folk-Art Accent",
+    excerpt: "Bring a gentle folk-art presence, hand-painted colour and an Indian craft mood to an entryway, prayer corner or living wall.",
+    dek: "A wooden cow face wall hanging feels most beautiful when it is styled with restraint and described with complete honesty about its age, finish and making.",
+    intro: "A hand-finished wooden cow face can make a room feel personal, warm and rooted in folk-art character. It is also a product where truthful naming matters. If the piece is newly made with an aged finish, call it antique-look or antique-finished; reserve the word antique for documented, genuinely old pieces.",
+    palette: ["#a84d32", "#d1a143", "#466152"],
+    cta: "View the current finish and real photographs of a wooden cow face for your entry or living space.",
+    images: [
+      "Front image of the full cow face against a quiet background",
+      "Close-up of painted eyes, carving lines and surface texture",
+      "Lifestyle image in an entryway, console setting or calm prayer corner",
+      "Rear image showing the mounting hook and the true finish on the back"
+    ],
+    buyingChecklist: [
+      "Use antique only with verifiable age or provenance; otherwise use antique-look or antique-finished.",
+      "Give accurate material, paint, size, weight and hanging information without guessing.",
+      "Show the specific available piece when hand-painted colour, crackle finish or grain can vary.",
+      "Present it respectfully as a decorative art piece and do not make unverified religious or spiritual claims."
+    ],
+    sections: [
+      { heading: "What a cow face wall hanging brings to a room", body: ["This piece adds a calm face and a handmade point of focus to a wall. Near an entry it can feel welcoming; in a living room it can introduce folk-art character; in a quiet personal corner it can sit beside a simple lamp, plant or small tray. Its impact comes from the face itself, so it does not need an overfilled setting.", "Keep the surrounding styling modest. A wooden shelf, one brass accent or a small plant is enough. That restraint helps the product look considered in photography and gives a buyer a practical, achievable way to style it at home."] },
+      { heading: "Why accurate antique language builds trust", body: ["Antique is a powerful sales word, but it must be used accurately. A new wooden piece made in an old-world style is still valuable, yet it should be described as vintage-look, antique-inspired or antique-finished. A genuinely antique object needs separate information about its age, source, condition and any restoration.", "This level of clarity reduces returns and protects the handmade character of the piece. When customers know they are buying a new hand-painted work, they understand that colour depth, tiny marks and grain variation are part of its personality rather than hidden defects."] },
+      { heading: "Colour and styling ideas", body: ["Clay, indigo, mustard, ivory and natural wood create an easy setting for a painted cow face. Place a darker piece on a light wall, or choose a natural wood tone against a warm terracotta background. A woven runner or a small brass tray below it can connect the wall art to the rest of the room.", "In a modern interior, let it stand alone on a clean wall. In a more layered home, repeat one colour from the painting in a cushion, book spine or textile. Provide more than one lifestyle image so a buyer can see that the product works in different homes, not only in one styled photoshoot."] },
+      { heading: "Order, packaging and care", body: ["For a hand-painted piece, sending a real front and side image before dispatch is an excellent service. The packaging should protect ears, raised features and corners, and a simple packing image or video gives the buyer confidence before the parcel arrives.", "For routine care, a dry soft cloth is usually the safest starting point. Avoid moisture, harsh cleaners and long exposure to direct sun unless the actual finish has been designed for it. The final care note should always reflect the real materials used in that item."] }
+    ]
+  },
+  {
+    slug: "hand-painted-antique-wooden-trunk-sandook",
+    number: "04",
+    category: "Wooden Accents",
+    topic: "wooden-accents",
+    date: "August 25, 2026",
+    readTime: "10 min read",
+    title: "Hand-Painted Antique-Look Wooden Trunk: Storage That Tells a Story",
+    excerpt: "Use a painted wooden trunk or sandook as storage, a coffee-table surface or a memorable end-of-bed statement.",
+    dek: "A trunk is one of the few decor pieces that can offer storage, a usable surface and strong visual character at the same time.",
+    intro: "A hand-painted wooden trunk brings colour, age-like character and practical storage into one object. Whether it is a newly crafted trunk with an antique finish or a verified older piece, a buyer should see its exterior, interior, hinges, lid movement and condition before making a decision.",
+    palette: ["#a43f2c", "#dbad45", "#2e5960"],
+    cta: "Check current trunk availability, interior storage details and the real hand-painted finish.",
+    images: [
+      "Main image of the closed trunk showing its painted front and top",
+      "Open image showing interior storage, lid construction and hinges",
+      "Lifestyle image as a coffee table or at the end of a bed",
+      "Detail image of handles, corners, paintwork and genuine surface marks"
+    ],
+    buyingChecklist: [
+      "List outside and inside dimensions, lid direction, usable storage space and the real weight.",
+      "If it is a true antique, document age and condition; if not, describe it accurately as antique-look or vintage-finished.",
+      "Show handles, hinges, base and lid operation in photographs or a short video.",
+      "For heavy furniture, state delivery method, access requirements, packaging and the actual return or damage terms."
+    ],
+    sections: [
+      { heading: "Why a trunk can be a smart purchase", body: ["A good trunk solves several small home problems at once. It can store linen, toys, seasonal textiles or keepsakes; become a coffee-table surface in a living room; work as a bed-end storage bench; or hold a tray in an entry. This everyday usefulness is what makes it more than a decorative purchase.", "A product page should show how much room the open lid needs and what the interior can realistically hold. Explain the outside measurements, interior capacity and safe uses so the customer can decide based on their space, not only on a beautiful styled image."] },
+      { heading: "How to present paint and aged finishes honestly", body: ["Hand-painted trunks are special because brushwork, colour density and surface texture are visible. Do not hide worn corners, grain shifts or painted details behind filters. Close-up photographs of the finish help a buyer understand exactly what makes the piece handmade.", "A new trunk in an old-world style should be described as hand-painted vintage-look or antique-finished. This is not weaker language; it is better customer service. When the product is accurately named, buyers appreciate its character instead of expecting a historical object with a provenance it does not have."] },
+      { heading: "Styling a trunk in real rooms", body: ["On a coffee table trunk, keep the top practical: a tray, two books and one small vessel are enough. At the foot of a bed, a folded textile or two cushions can soften the setting, provided the lid and finish are suitable for that use. Leave enough circulation around it so the room does not feel blocked.", "Show more than one use in your images. A buyer with a small living room may see it as closed storage, while someone with a larger bedroom may see it as a focal point. Clear lifestyle photography helps them connect the product to a real need rather than an abstract desire."] },
+      { heading: "Care, load and delivery", body: ["Keep wood away from standing water and use a tray or coaster for drinks and planters. Do not promote the trunk as seating or a heavy-load surface unless its construction has been tested for that use. Care instructions should reflect the actual wood and finish, not generic promises.", "Furniture delivery is part of the sale. Explain parcel size, weight, whether assembly is needed, and what a customer should check on arrival. This practical transparency is one of the strongest ways to make a high-value handmade purchase feel safe."] }
+    ]
+  },
+  {
+    slug: "wooden-carved-elephant-statue",
+    number: "05",
+    category: "Wooden Accents",
+    topic: "wooden-accents",
+    date: "August 24, 2026",
+    readTime: "8 min read",
+    title: "Wooden Carved Elephant Statue: A Small Detail with Handmade Presence",
+    excerpt: "Add warmth, texture and Indian craft character to a shelf, console or thoughtful gift with a carved wooden elephant.",
+    dek: "A carved elephant works best when its handwork has room to be seen and its size is clear enough for a buyer to place confidently.",
+    intro: "A wooden carved elephant is a versatile accent for a bookshelf, entry console, desk or gift box. The strongest product story is not an exaggerated promise; it is clear photography of the carving, reliable dimensions and a description that lets the customer understand exactly how the piece will look and function at home.",
+    palette: ["#8a5132", "#d7a645", "#3d5c50"],
+    cta: "See the available carved elephant and choose the right size for your shelf or console.",
+    images: [
+      "Main side-profile image of the full carved elephant",
+      "Close-up of carving, facial details and natural wood grain",
+      "Lifestyle image on a bookshelf or entry console",
+      "Scale image beside a book or hand, with the base clearly visible"
+    ],
+    buyingChecklist: [
+      "Provide height, length, width, weight and the actual construction or wood material.",
+      "Show handmade carving, grain and finish variation rather than promising factory-like uniformity.",
+      "Keep cultural or spiritual claims respectful and factual; do not promise outcomes that cannot be verified.",
+      "Photograph the underside, stability and any protective pads that touch furniture surfaces."
+    ],
+    sections: [
+      { heading: "A small decor piece with a strong effect", body: ["A carved elephant can fill the quiet space on a bookshelf, welcome visitors on an entry console or add personality to a home office. Give it room to breathe. A stack of books, a small plant and the elephant are often enough to create a complete vignette without turning the shelf into a cluttered display.", "This is also why it works as a gift. It is small enough to be personal but detailed enough to feel meaningful. A good listing should show its real scale so a customer does not mistake a palm-sized accent for a large tabletop sculpture."] },
+      { heading: "What close-up images should show", body: ["The face, ears, feet and carved patterns are where handwork becomes visible. Photograph those areas clearly. Buyers should be able to see whether the carving is shallow or deep, whether the surface is smooth or textured, and how the finish responds to light.", "Words like premium are not enough on their own. Material, finish, dimensions, weight and care guidance answer more meaningful questions. Clear details are better selling tools because they help a shopper feel certain rather than pressured."] },
+      { heading: "A thoughtful gift without overclaiming", body: ["A wooden elephant can be a useful housewarming, festival or desk gift when it is presented as a beautifully made decorative object. Show gift-ready packaging and state whether a message card is available. Do not imply that an item guarantees luck, wealth or any result; the craft itself is reason enough to give it.", "Offer the real available size or finish options where they exist. This makes a small purchase feel considered and prevents the common disappointment of receiving a product that looks different from the styled product image."] },
+      { heading: "Care and placement", body: ["Keep the statue on a stable, dry surface and away from the edge of a shelf. Direct heat, persistent humidity and strong chemical cleaners can affect wood or paint finishes. If the base includes protective pads, show them; buyers appreciate knowing their furniture surface has been considered.", "Dust it with a soft dry cloth or small brush, especially around deeper carving. Final care instructions should always follow the actual finish on the item, which is why the product listing should never use one generic care promise for every batch."] }
+    ]
+  },
+  {
+    slug: "wooden-chaukidar-figure",
+    number: "06",
+    category: "Wooden Accents",
+    topic: "wooden-accents",
+    date: "August 23, 2026",
+    readTime: "8 min read",
+    title: "Wooden Chaukidar Figure: A Colourful Hand-Painted Decorative Character",
+    excerpt: "Bring folk-art colour, a touch of humour and handmade personality to a shelf, entry corner or thoughtful gift.",
+    dek: "This cheerful hand-painted figure is for homes that want some joy and character alongside more serious decor.",
+    intro: "A wooden chaukidar figure is memorable because of its expression, colourful uniform and human character. It is not meant to disappear into a room. To sell it well, show the real paintwork, height, base and finish clearly so the buyer knows how this lively small sculpture will fit into their space.",
+    palette: ["#b84332", "#e1b13f", "#285c63"],
+    cta: "View the real hand-painted detail and available size of a wooden chaukidar figure.",
+    images: [
+      "Main front view of the complete chaukidar figure",
+      "Close-up of the face, turban or uniform and hand-painted details",
+      "Lifestyle image on a shelf, entry console or high nursery shelf",
+      "Scale and base image showing its true height and stable footprint"
+    ],
+    buyingChecklist: [
+      "State exact height, base dimensions and weight so customers can plan their shelf space.",
+      "Explain that hand-painted faces, colours and small details can vary slightly from one piece to another.",
+      "If photographed in a children's room, clarify whether it is decor or a tested toy; do not present untested decor as a toy.",
+      "Describe protective packaging for raised or fragile decorative parts before the customer orders."
+    ],
+    sections: [
+      { heading: "Where this colourful figure works", body: ["A bookshelf, entry console, home office or high nursery shelf can all benefit from a small burst of colour. Keep the styling around the chaukidar figure calm: a few books, a simple pot or a neutral backdrop will let the hand-painted character take the lead.", "It also makes a lively gift because it has personality rather than generic polish. In product images, show it in a believable everyday setting. Buyers should be able to picture one simple corner of their own home becoming more cheerful, not feel they must recreate an entire showroom."] },
+      { heading: "How to sell hand-painted colour well", body: ["Avoid strong filters and oversaturated editing. Photograph the real colours in honest light, then add front, side and close-up views. When a buyer can see the face, paint layers and brush marks, they understand the value of a handmade decorative figure.", "Hand-painted details may vary from piece to piece, especially the expression or colour distribution. Do not hide that reality. Show the dispatched piece when possible, or state it clearly before purchase. That kind of transparency turns variation into a feature instead of a surprise."] },
+      { heading: "Responsible use in children's spaces", body: ["A colourful object can look lovely in a child's room, but that does not automatically make it a plaything. Unless the product has the appropriate safety testing, describe it as shelf decor and position it out of reach. This is clearer for parents and more responsible for the brand.", "Show the base and balance in your photographs. A customer needs to know that the figure is not only attractive but also sensible for the surface where it will live. Honest use guidance is part of good product storytelling."] },
+      { heading: "Gift packaging and care", body: ["Gift buyers value clear information about ready-to-gift packaging, message cards and dispatch timing. Because painted wooden figures can have raised details, protective packing deserves special attention and can be shown in one simple photograph or short video.", "For care, recommend a soft dry cloth and keeping the figure away from water, harsh cleaners and long exposure to intense sunlight. If a particular finish needs different treatment, state that directly rather than relying on vague blanket guidance."] }
+    ]
+  },
+  {
+    slug: "reclaimed-wood-coffee-side-table",
     number: "07",
-    category: "Gifting",
-    topic: "gifting",
-    date: "July 23, 2026",
-    readTime: "6 min read",
-    title: "Housewarming Gift Ideas That Feel Useful and Thoughtful",
-    excerpt: "Give something that earns a place in a new home, rather than one more thing to store.",
-    dek: "The best housewarming gifts say: make yourself at home. They are practical, warm and easy to live with.",
-    intro: "Moving into a new home creates a lot of small needs at once. A considered gift can make one of those ordinary moments feel cared for.",
-    palette: ["#a84732", "#cb9f46", "#e7d5b5"],
-    cta: "Shop gifts made for new rituals, shared meals and welcoming corners.",
+    category: "Wooden Furniture",
+    topic: "furniture",
+    date: "August 22, 2026",
+    readTime: "10 min read",
+    title: "Reclaimed Wood Coffee or Side Table: Furniture with Real Character",
+    excerpt: "Bring useful surface space, warm texture and one-of-a-kind grain to a living room with reclaimed wood furniture.",
+    dek: "The beauty of reclaimed wood lies in its marks and variation, but a good sale depends equally on real dimensions, stability and finish information.",
+    intro: "A coffee or side table is used every day, so it needs more than a good photograph. A customer should understand the top dimensions, total height, leg construction, finish, safe use and delivery process. Reclaimed wood is valuable because every board can carry a different tone, mark or grain—not because those differences are hidden.",
+    palette: ["#70462f", "#b9863f", "#496151"],
+    cta: "Check the real dimensions and reclaimed wood finish before choosing a coffee or side table for your room.",
+    images: [
+      "Main three-quarter image of the complete table",
+      "Close-up of reclaimed grain, joinery and top finish",
+      "Lifestyle image beside a sofa or reading chair",
+      "Function image showing top surface, legs, under-clearance and scale"
+    ],
+    buyingChecklist: [
+      "List length, width, height, top thickness and lower clearance separately.",
+      "Show grain changes, filled marks, joins and colour variation in honest close-up photography.",
+      "Only make load or seating claims when they are based on actual construction or testing.",
+      "Explain furniture delivery, assembly needs, packaging, access requirements and real return terms before purchase."
+    ],
     sections: [
-      { heading: "Choose for a daily ritual", body: ["Think about the routines that make a place feel like home: making tea, setting the table, lighting a lamp at dusk or putting things away at the end of the day. A tray, pair of napkins, small basket or diya can support one of these rituals beautifully.", "Useful gifts tend to stay visible. Every time they are used, the person remembers the warmth behind them."] },
-      { heading: "Keep the palette flexible", body: ["Unless you know the home well, choose warm neutrals, natural materials or a restrained pattern. These can settle into many interiors and do not force the recipient to redesign around them.", "Ivory cotton, woven jute, brass and simple wood are safe choices because they work with both modern and traditional spaces."] },
-      { heading: "Make a small set", body: ["Two or three modest pieces can feel more generous than one large decorative item: a pair of napkins with a small brass bowl, or a woven basket with a candle and handwritten note. Keep the set connected by colour, material or use.", "A small gathering of objects also gives the recipient flexibility to style them separately."] },
-      { heading: "Add a personal note", body: ["Tell them why you chose the piece or suggest a small way to use it. A simple message—'for slow Sunday breakfasts'—makes a practical object feel personal without being overly formal.", "The note is often what turns a beautiful item into a memorable gift."] }
+      { heading: "Choosing coffee-table versus side-table scale", body: ["For a coffee table, consider the sofa height and the walking room around it before you look at style. A table that is too tall or too broad can make a living room uncomfortable. For a side table, compare the height to the arm of the chair or sofa and think about what it needs to hold: a lamp, a book, a glass of water or all three.", "A useful product page does not hide behind a single overall measurement. Show the top size, total height and leg spacing, ideally with a tape measure or a furnished-room reference. These facts let a customer buy with confidence instead of relying on camera perspective."] },
+      { heading: "Why reclaimed marks are part of the value", body: ["Old timber can show tonal shifts, small filled holes, nail marks, grain movement or repaired areas. These features should not be edited out or disguised as something else. They are the reason a reclaimed piece feels different from uniform new furniture.", "The phrase natural variation is only useful when photos prove it. Show close-ups and a moving video of the surface where possible. Buyers who can see the real texture understand that they are getting a unique table, not a factory copy that happens to have a rustic filter."] },
+      { heading: "Styling and everyday use", body: ["Reclaimed wood sits easily with linen, jute, matte ceramic and aged brass. Keep the top surface light: one tray, a few books and a small pot still leave room to appreciate the wood. In a smaller room, an open visual composition can make the table feel less heavy.", "Do not market a table as a footrest, seat or heavy-load surface unless the construction genuinely supports that use. Honest use limits protect the customer and the product. Styling advice should make the object easier to live with, not encourage unsafe behaviour."] },
+      { heading: "Care and delivery clarity", body: ["Use coasters and trays for hot, wet or rough objects. Remove dust with a dry or lightly damp cloth, following the finish-specific guidance for the item. Never promise that every wood finish is waterproof or maintenance-free unless that has been verified.", "For furniture, delivery is part of the product. Tell customers the package size, weight, assembly requirements and what to inspect at arrival. This transparent process makes a handmade, higher-value purchase feel much safer and more professional."] }
     ]
   },
   {
-    slug: "how-to-layer-cushions",
+    slug: "wooden-jaali-work-wall-panel",
     number: "08",
-    category: "Home decor",
-    topic: "home-decor",
-    date: "July 18, 2026",
-    readTime: "5 min read",
-    title: "How to Layer Cushions for a Softer, More Inviting Sofa",
-    excerpt: "A simple formula for shape, size and texture that works in almost any living room.",
-    dek: "Layering cushions is not about piling them high. It is about creating a comfortable rhythm for the way people actually sit.",
-    intro: "A good sofa arrangement looks relaxed from a distance and feels easy when someone takes a seat. Start with shape and scale before you think about pattern.",
-    palette: ["#476054", "#b06743", "#cba34e"],
-    cta: "Layer your sofa with cotton, texture and quiet handblock pattern.",
+    category: "Wooden Wall Decor",
+    topic: "wall-decor",
+    date: "August 21, 2026",
+    readTime: "9 min read",
+    title: "Wooden Jaali Work Wall Panel: Add Carved Depth to a Blank Wall",
+    excerpt: "Use a carved jaali panel to bring pattern, shadow and handcrafted depth to a bedroom, dining area or entry wall.",
+    dek: "With the right light, frame and breathing room, a carved jaali panel can become the identity of a wall rather than just another decoration.",
+    intro: "A wooden jaali panel is ideal for people who want texture and pattern rather than a conventional framed picture. Its cutwork can create subtle shadows and visual depth, but the buyer needs a clear view of the carving, frame, real size, weight and mounting method before deciding where it belongs.",
+    palette: ["#704432", "#c89542", "#3e5d55"],
+    cta: "Explore the real carved pattern and sizing of a wooden jaali panel for your wall.",
+    images: [
+      "Straight-on main image of the complete jaali wall panel",
+      "Close-up of cutwork, wood grain and outer frame",
+      "Lifestyle image above a headboard or dining-room console",
+      "Side and rear image showing panel depth and mounting points"
+    ],
+    buyingChecklist: [
+      "State outer dimensions, frame width, panel depth, cutwork opening and approximate weight.",
+      "Say clearly whether carving is hand-carved or machine-cut; do not overstate the process.",
+      "Show mounting points and explain whether screws or hardware are included.",
+      "Only claim moisture suitability when the actual material and sealing make that claim accurate."
+    ],
     sections: [
-      { heading: "Begin with the largest size", body: ["Place the largest cushions at the outer corners. They provide the visual foundation and make the sofa look generous. A medium cushion can sit in front, while a smaller lumbar shape adds a final relaxed layer.", "On a compact two-seater, two large cushions and one lumbar may be all you need. Scale matters more than quantity."] },
-      { heading: "Vary texture before print", body: ["If you are unsure how to mix patterns, first mix surfaces: a smooth cotton, a woven cover and a subtly textured neutral. This gives the sofa depth without creating visual noise.", "Once the textures are working, add one printed piece. It will look intentional because the arrangement already has a calm base."] },
-      { heading: "Keep the centre usable", body: ["Cushions should frame a place to sit, not occupy it completely. Leave the centre of the sofa free, and do not force every cushion into a perfect upright line. A slight angle or overlap feels more welcoming.", "If you find yourself moving cushions aside every time you sit down, reduce the number or choose a slimmer size."] },
-      { heading: "Refresh instead of replacing", body: ["Change one or two covers with the season, then keep the base cushions the same. A deep indigo or rust cover can warm up monsoon and winter; washed stripes and lighter cotton can make the same sofa feel fresher in summer.", "This slower approach is kinder to your budget and makes you appreciate the pieces you already have."] }
+      { heading: "Finding the right wall and proportion", body: ["A jaali panel can sit above a bed, behind a dining console, along an entry wall or around a quiet personal corner. Before buying, compare the panel width with the furniture below it. A very small panel can disappear on a broad wall, while an oversized one can make a compact room feel crowded.", "Sometimes a set of two or three panels is the better composition, but only when the product is genuinely made to work as a set. Show single-panel and grouped styling images so buyers can understand the possibilities without being forced to guess from one cropped photo."] },
+      { heading: "How light changes the carving", body: ["The charm of jaali work is the relationship between open and solid areas. Gentle side light can make the cutwork cast soft shadows and add more depth to the wall. Show one day and one evening image if possible, while explaining that the final effect depends on the customer's own room light.", "A bright backlight is not always necessary or flattering. A nearby lamp or soft wall wash can reveal the carving more naturally. Useful lighting guidance is not an extra sales line; it helps the customer make the most of the piece after it arrives."] },
+      { heading: "Presenting carved work truthfully", body: ["If the carving is handmade, small differences in lines and corners are possible. That does not reduce its value, but it should be visible. Show the carving close-up rather than promising a perfectly identical pattern that handwork cannot honestly guarantee.", "A front photograph alone is not enough for wall decor. Include the side profile, frame construction and rear hooks. Buyers need to know that the product not only looks beautiful in a styled image but can also be installed safely and successfully in their actual home."] },
+      { heading: "Mounting and care", body: ["Large or heavy panels need wall fixings that match the wall type and actual product weight. Do not suggest a light hook for a substantial panel. If professional installation is sensible, say so directly and clearly.", "Use a soft brush for dust in the cutwork and avoid standing water, harsh chemicals and persistent dampness unless the specific finish supports it. Final care advice should be written for the real product, not copied from a generic decor template."] }
     ]
   },
   {
-    slug: "choose-table-linen",
+    slug: "hand-carved-wooden-jewelry-box",
     number: "09",
-    category: "Home decor",
-    topic: "home-decor",
-    date: "July 12, 2026",
-    readTime: "6 min read",
-    title: "How to Choose Table Linen for Everyday Meals",
-    excerpt: "Make the dining table feel cared for on an ordinary weekday, not just when guests arrive.",
-    dek: "Table linen does not need a special occasion. It is an easy way to bring colour, softness and intention to a daily meal.",
-    intro: "The table is one of the few places where people regularly pause together. A simple cloth or runner can make that pause feel a little more considered.",
-    palette: ["#964632", "#d2ab4f", "#f1e3ca"],
-    cta: "Find handblock table linen designed for everyday meals and lingering conversations.",
+    category: "Wooden Accents",
+    topic: "wooden-accents",
+    date: "August 20, 2026",
+    readTime: "8 min read",
+    title: "Hand-Carved Wooden Jewelry Box: A Beautiful Reason to Keep Things in Order",
+    excerpt: "Store everyday jewelry, create a thoughtful gift or add handcrafted texture to a dressing table with a carved wooden box.",
+    dek: "A good jewelry box should be as useful inside as it is beautiful on top: measurements, compartments, hinges and lining all matter.",
+    intro: "A wooden jewelry box is something people handle every day, which makes honest function details essential. The carved lid may catch the eye, but the buyer also needs to see the inside space, compartment layout, lining, hinge action and closure before deciding whether it suits their collection.",
+    palette: ["#774a33", "#c49442", "#7f5f45"],
+    cta: "See the carved detail, interior layout and available finish of a handmade wooden jewelry box.",
+    images: [
+      "Main image of the closed jewelry box and carved lid",
+      "Close-up of carving, corners, hinge and wood finish",
+      "Open image showing compartments, lining and usable interior space",
+      "Lifestyle image showing scale on a dressing table or console"
+    ],
+    buyingChecklist: [
+      "Give outer and inner measurements, compartment count and the real lining material or finish.",
+      "Show the hinge, lid movement and any clasp or lock working in a photo or short video.",
+      "Do not call a decorative clasp a security lock; explain its actual function honestly.",
+      "Show natural grain and hand-carved variation, especially for gifts where the customer expects a specific finish."
+    ],
     sections: [
-      { heading: "Match the scale to the table", body: ["A tablecloth should drape enough to feel soft but not so much that it catches on chairs. A runner works well when you want the grain of the table to remain visible. For small tables, placemats can bring colour without adding bulk.", "Measure before buying and think about the way you serve. If plates and shared dishes need space, a less elaborate print can keep the table easier to use."] },
-      { heading: "Choose patterns that forgive use", body: ["Small marks and irregular prints are gentle companions for daily meals. They do not demand perfect styling, and they look better with a few signs of life than overly crisp formal linen.", "Block prints are especially lovely for this reason: their handmade quality suits a table that is actually used."] },
-      { heading: "Layer simply", body: ["One runner, a small bowl of fruit and cloth napkins are enough for an everyday setting. You do not need centrepieces that must be moved every time someone sits down.", "If you use a tablecloth, let the rest of the table stay light. A few useful objects will look better than a full display."] },
-      { heading: "Care for cotton gently", body: ["Wash cotton in cool water with a mild detergent, dry away from harsh sun when possible and iron while slightly damp for a smooth finish. Expect it to soften over time; that softness is part of the charm.", "A cloth that is easy to wash is the one you will use often, which is exactly the point."] }
+      { heading: "A box for daily order, not only display", body: ["A jewelry box can make a dressing table feel instantly calmer because everyday rings, earrings, watches and small keepsakes have one clear home. Show the box open with realistic items inside, so the buyer can judge what will fit instead of guessing from an empty, styled image.", "Different box sizes suit different needs. A compact box may be right for daily jewelry, while a larger one may work for sets and accessories. Describe the interior dimensions and compartment layout rather than using vague labels such as spacious or large."] },
+      { heading: "Showing the value of hand carving", body: ["The detail of a hand-carved lid is visible only in close-up. Photograph the pattern depth, grain, corner finishing and surface texture in honest light. Avoid glossy editing that makes real wood colour impossible to judge.", "Small changes in grain or carved lines are natural in handmade work. State this clearly, but do not use it as an excuse to send something wildly different from the product images. Sharing the actual piece before dispatch is the clearest way to set the right expectation."] },
+      { heading: "Making it a thoughtful gift", body: ["A jewelry box can be a personal wedding, birthday or housewarming gift because it is beautiful and useful at the same time. For gift buyers, show secure packaging, offer a message-card option if available, and state whether any jewelry shown in the photographs is included or only for styling.", "If jewelry is not included, say that prominently. Transparent product information lets customers buy exactly what they think they are buying and prevents unnecessary disappointment or returns."] },
+      { heading: "Care and practical limits", body: ["Keep a wooden jewelry box in a dry place and close the lid gently. Humidity can affect wood and internal lining, so care should match the actual materials used. A small moisture-control option may be useful, but only advertise features that are actually supplied with the box.", "If the box has a lock or clasp, explain whether it is decorative or functional. A good seller does not confuse a simple closure with a secure storage system. Clear limits make the product feel more trustworthy, not less desirable."] }
     ]
   },
   {
-    slug: "slow-living-home-rituals",
+    slug: "carved-wooden-mirror-frame",
     number: "10",
-    category: "Slow living",
-    topic: "slow-living",
-    date: "July 7, 2026",
-    readTime: "6 min read",
-    title: "5 Slow-Living Rituals That Make Home Feel More Restful",
-    excerpt: "Small repeatable habits that help a house feel like a place to return to.",
-    dek: "Slow living is not about doing everything perfectly. It is about noticing a few ordinary moments and giving them a little care.",
-    intro: "A restful home is built through rituals more than purchases. The objects you choose can support those moments, but the feeling comes from how you move through the day.",
-    palette: ["#365547", "#bd7146", "#d8a944"],
-    cta: "Create small everyday rituals with objects made for warmth and use.",
+    category: "Wooden Wall Decor",
+    topic: "wall-decor",
+    date: "August 19, 2026",
+    readTime: "9 min read",
+    title: "Carved Wooden Mirror Frame: Light, Depth and Handmade Detail for Your Wall",
+    excerpt: "Use a carved wooden mirror frame to make an entryway, dressing area or living wall feel brighter, deeper and more considered.",
+    dek: "A carved mirror is both useful and decorative, but the real mirror size, frame size, mounting method and safe glass delivery deserve equal attention.",
+    intro: "A carved wooden mirror frame brings two benefits together: it reflects light and it gives the wall a layer of handmade craft. Before ordering, a buyer should know the visible mirror size, total frame size, real weight, hanging direction, glass condition and how it will be packed for safe delivery.",
+    palette: ["#714532", "#c99a43", "#3e6054"],
+    cta: "View the real carving, mirror size and available finish for a wooden mirror frame.",
+    images: [
+      "Main front image showing the full mirror and carved wooden frame",
+      "Close-up of carving, corners and actual wood finish",
+      "Lifestyle image above an entry console or in a dressing area",
+      "Rear image showing hanging points, frame depth and glass-safe packaging"
+    ],
+    buyingChecklist: [
+      "List total frame dimensions and visible mirror dimensions separately.",
+      "State the hanging direction, real weight, rear hooks and required wall fixing clearly.",
+      "If the mirror has a deliberate aged effect, describe it as such rather than presenting it as a standard clear mirror.",
+      "Explain glass packaging, arrival inspection and the real process for reporting transit damage."
+    ],
     sections: [
-      { heading: "Open one window first", body: ["Begin the morning by opening a window, drawing back a curtain or standing on the balcony for a minute. It gives the day a small threshold and changes the feeling of a room before you have done anything else.", "Keep the nearby surface simple: perhaps a small plant, a diya or a cup you enjoy using. The space becomes an invitation to pause."] },
-      { heading: "Set up tea without rushing", body: ["Instead of carrying your drink straight to a desk, put it on a tray with a cloth napkin or a small bowl. This takes only a moment but makes an ordinary routine feel held together.", "The point is not to create more work. It is to notice the part of the day that already exists."] },
-      { heading: "Reset one surface at dusk", body: ["Choose one table, shelf or bedside surface to clear each evening. Put away what does not belong, fold a throw and light a small lamp or diya. A single calm surface can change the mood of the whole room.", "This is easier to keep up than trying to reset an entire home after a long day."] },
-      { heading: "Keep a small basket for tomorrow", body: ["Use a basket for the things you will need again soon: a book, charger, journal, shawl or current craft project. At night, collect them there instead of scattering them across the room.", "The next morning begins with fewer decisions, which is a quiet form of luxury."] }
+      { heading: "How a mirror changes a room", body: ["An entry mirror is useful before leaving the house and can also bounce light into a smaller space. In a dining or living area, it can reflect a window, a plant or an open part of the room. The carved frame turns that practical function into a genuine decor statement.", "Before choosing the wall, think about what the mirror will reflect. A calm corner, light source or beautiful object is helpful; visible clutter or harsh direct glare is less so. This simple guidance helps a buyer get a better result as soon as the mirror is installed."] },
+      { heading: "Honest detail about carving and glass", body: ["Show close-ups of the carving and a clear image of the mirror surface. If the frame is hand-carved, small pattern differences may exist; if the glass is distressed or antique-effect, explain that separately. A customer should never discover an intentional aged effect only after opening the parcel.", "Claims such as solid wood, antique mirror or hand-carved should always match the real construction. Accurate material information is more valuable than a dramatic adjective because it lets a buyer compare, trust and choose with confidence."] },
+      { heading: "Height, styling and safe installation", body: ["Above an entry console, leave a little wall space between the furniture and frame. In a dressing area, hang the mirror at a height that suits the person using it. A heavy frame should never rely on a light hook just because the styled photograph looks neat.", "Keep the styling underneath simple: a brass lamp, a small pot or one tray may be enough. Too many small objects can appear twice in the reflection and make a beautiful corner feel busy. A good lifestyle photo should demonstrate this balance honestly."] },
+      { heading: "Glass delivery and care", body: ["Mirror packaging is a critical part of the sale. Corner protection, a strong outer carton and a clear arrival-check process help the customer feel secure. State the time limit and method for reporting transit damage according to your actual policy; do not leave the buyer guessing.", "For cleaning, remove dust with a dry microfiber cloth first. Apply any glass cleaner to the cloth rather than spraying the carved wood directly, and use finish-appropriate care guidance for the frame. This small instruction protects both the mirror and the handwork around it."] }
     ]
   }
 ];
 
 export const topicLabels = {
-  "home-decor": "Home decor",
-  gifting: "Gifting",
-  craft: "Craft stories",
-  "slow-living": "Slow living"
+  "wall-decor": "Wooden Wall Decor",
+  "wooden-accents": "Wooden Accents",
+  furniture: "Wooden Furniture"
 };
