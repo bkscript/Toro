@@ -267,6 +267,17 @@ def article_page(post: dict, posts: list[dict]) -> str:
         if index < 4:
             sections.append(image_placeholder(post["images"][index], index + 1))
     checklist = "".join(f"<li>{text(item)}</li>" for item in post["buyingChecklist"])
+    faq = post.get("faq", [])
+    faq_toc = '<a href="#faq">Common questions</a>' if faq else ""
+    faq_items = "".join(
+        f'<details><summary>{text(item["question"])}</summary><p>{text(item["answer"])}</p></details>'
+        for item in faq
+    )
+    faq_html = f'''<section class="article-faq" id="faq" aria-labelledby="faq-heading">
+              <p class="article-faq__eyebrow">Frequently asked questions</p>
+              <h2 id="faq-heading">Common questions</h2>
+              {faq_items}
+            </section>''' if faq else ""
     related = [candidate for candidate in posts if candidate["topic"] == post["topic"] and candidate["slug"] != post["slug"]][:3]
     related_html = "".join(f'<a href="{local_href(output_file, ROOT / "blog" / candidate["slug"] / "index.html")}">{text(candidate["title"])} <span aria-hidden="true">↗</span></a>' for candidate in related)
     return page_head(title, post["excerpt"], canonical, "article", output_file, schema) + header(output_file) + f"""
@@ -275,11 +286,12 @@ def article_page(post: dict, posts: list[dict]) -> str:
         <header class="article-head"><a class="back-link" href="{local_href(output_file, ROOT / 'index.html')}">← All articles</a><p class="article-category">{text(post['category'])}</p><h1>{text(post['title'])}</h1><p class="article-dek">{text(post['dek'])}</p><p class="article-byline">MARWARMADE EDITORIAL · {text(post['date'])} · {text(post['readTime'])}</p></header>
         {image_placeholder(post['images'][0], 1, True)}
         <div class="article-layout">
-          <nav class="article-toc" aria-label="Article sections"><p>In this story</p>{toc}<a href="#buying-guide">Before you order</a></nav>
+          <nav class="article-toc" aria-label="Article sections"><p>In this story</p>{toc}<a href="#buying-guide">Before you order</a>{faq_toc}</nav>
           <div class="article-body">
             <p class="article-intro">{text(post['intro'])}</p>
             {''.join(sections)}
-            <section class="buying-guide" id="buying-guide"><p class="buying-guide__eyebrow">Buy with confidence</p><h2>What to check before you order</h2><ul>{checklist}</ul></section>
+            <section class="buying-guide" id="buying-guide"><p class="buying-guide__eyebrow">Buy with confidence</p><h2>Quick checklist</h2><ul>{checklist}</ul></section>
+            {faq_html}
             <aside class="article-note">Handmade wood naturally varies in grain, colour and small carving details. Real photographs and accurate specifications are essential before any purchase.</aside>
             <section class="article-cta" aria-label="Shop this product"><p>Shop with MarwarMade</p><h3>{text(post['cta'])}</h3><a href="https://marwarmade.com">Check price &amp; availability <span>↗</span></a></section>
             <section class="related" aria-labelledby="related-heading"><p class="related-label" id="related-heading">You may also like</p>{related_html}</section>

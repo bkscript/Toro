@@ -24,6 +24,24 @@ export const posts = [
       "Hand-painted colour, wood grain and brushwork can vary slightly; show the actual available piece in photos.",
       "Share dispatch time, safe-packaging details and the real return or damage-reporting terms before payment."
     ],
+    faq: [
+      {
+        question: "What size wooden bull head wall decor should I choose?",
+        answer: "First compare the piece's exact width, height and wall projection with the clear wall space you have. Mark its outline on the wall with paper tape, then step back from the room entrance. Leave enough breathing room around the horns so the carving reads as one confident focal point rather than feeling crowded."
+      },
+      {
+        question: "How do I hang a wooden bull head safely?",
+        answer: "Check the actual piece's weight, rear hanging hardware and the wall type before ordering. Use suitable fixings for masonry, wood or drywall as applicable, and ask the seller what hardware is included. For a heavy wall piece, a secure wall anchor or professional installation is the sensible choice."
+      },
+      {
+        question: "Will the hand-painted finish look exactly like the photographs?",
+        answer: "Handmade carving, wood grain and brushwork can vary slightly. Ask to see current photographs of the piece that will be dispatched, and check the stated finish and colour in natural light. Honest product photography is the best way to set the right expectation."
+      },
+      {
+        question: "How should I care for hand-painted wooden wall decor?",
+        answer: "Use a dry, soft cloth for routine dusting and avoid harsh chemicals, persistent dampness and outdoor exposure unless the actual product is specifically made for it. Follow the seller's care instructions for the real wood and finish used in the piece."
+      }
+    ],
     sections: [
       { heading: "Where a bull head has the most impact", body: ["Give this wall piece enough quiet space to work. An entry console, a simple living-room wall, a dining corner or a stair landing are all strong options. In a compact room, avoid placing it inside a crowded gallery wall; one bold focal point usually looks far more considered than ten small distractions.", "A low wooden console, a terracotta vessel or a simple table lamp beneath it will ground the composition. A deep-painted piece stands out beautifully on a pale wall, while a natural or light finish can create contrast against olive, charcoal or warm clay paint."] },
       { heading: "Why the hand-painted detail matters", body: ["A hand-painted bull head has movement that a flat, identical factory finish cannot offer. The brush direction, colour depth and small irregularities make the carving feel alive. That is why close-up photography matters: buyers should be able to see the character they are paying for, not only a distant styled image.", "Good selling copy should be equally clear about what it is not. This is decorative wooden art, not animal material. Clear material information, multiple-angle photos and an honest description of its handmade variation build far more trust than exaggerated claims."] },
@@ -55,6 +73,12 @@ export const posts = [
       "List the full width including antlers, total height, wall projection and approximate weight.",
       "Show real colour and finish variation rather than relying on heavily edited photographs.",
       "Explain the mounting hardware, wall suitability and protection for the more delicate carved areas."
+    ],
+    faq: [
+      { question: "What should a wooden deer head be described as?", answer: "Use clear language such as carved wooden deer head wall decor or hunting-inspired wooden wall art. Do not imply taxidermy, real antler or antique provenance unless those claims can be documented for the actual piece." },
+      { question: "Where does a wooden deer head look best?", answer: "It needs a wall with enough vertical breathing room for the antlers. A study, entry, lobby or bedroom side wall can work well. Compare the full height and width with the furniture below it before deciding on the position." },
+      { question: "How do I choose the right deer head size?", answer: "Use the total width including antlers, height, depth from the wall and real weight from the product listing. Taping the outline on the wall is a simple way to judge the scale before you order." },
+      { question: "How should delicate carved areas be protected?", answer: "Confirm the mounting method and packaging for the actual item before purchase. During cleaning, use a soft dry cloth and avoid pulling on narrow carved details or using harsh chemical cleaners." }
     ],
     sections: [
       { heading: "The rooms that suit a deer head best", body: ["A carved deer head can work in rustic, Scandinavian, bohemian and classic interiors because its material is warm and its silhouette is clean. On a limewashed or off-white wall it reads softly; on deep green, charcoal or clay paint it becomes more dramatic. The surrounding furniture decides which version you get.", "In a bedroom, place it on a side wall or dressing corner instead of directly over the bed unless mounting and placement are fully secure. A study, lobby or café feature wall often gives the antlers enough height and breathing room to be seen properly."] },
@@ -88,6 +112,12 @@ export const posts = [
       "Show the specific available piece when hand-painted colour, crackle finish or grain can vary.",
       "Present it respectfully as a decorative art piece and do not make unverified religious or spiritual claims."
     ],
+    faq: [
+      { question: "Does antique wooden cow face mean the piece is genuinely old?", answer: "Not necessarily. Use antique only when age and provenance are documented. A newly made piece with an aged finish should be described as antique-look, antique-finished or vintage-inspired." },
+      { question: "Where can a wooden cow face wall hanging be styled?", answer: "An entry, living-room console wall or a calm personal corner can suit it well. Keep surrounding decor simple so the carved face remains the focal point rather than getting lost in a crowded display." },
+      { question: "How can I judge the real colour before buying?", answer: "Ask for current, unfiltered photographs of the available piece in natural light. Hand-painted colour, grain and surface texture can vary, so the listing should show the real finish rather than relying only on a styled image." },
+      { question: "What mounting details should be confirmed?", answer: "Check the piece's weight, rear hook or mounting points, wall projection and any included hardware. Choose wall fixings that suit your wall type, especially for a heavier carved piece." }
+    ],
     sections: [
       { heading: "What a cow face wall hanging brings to a room", body: ["This piece adds a calm face and a handmade point of focus to a wall. Near an entry it can feel welcoming; in a living room it can introduce folk-art character; in a quiet personal corner it can sit beside a simple lamp, plant or small tray. Its impact comes from the face itself, so it does not need an overfilled setting.", "Keep the surrounding styling modest. A wooden shelf, one brass accent or a small plant is enough. That restraint helps the product look considered in photography and gives a buyer a practical, achievable way to style it at home."] },
       { heading: "Why accurate antique language builds trust", body: ["Antique is a powerful sales word, but it must be used accurately. A new wooden piece made in an old-world style is still valuable, yet it should be described as vintage-look, antique-inspired or antique-finished. A genuinely antique object needs separate information about its age, source, condition and any restoration.", "This level of clarity reduces returns and protects the handmade character of the piece. When customers know they are buying a new hand-painted work, they understand that colour depth, tiny marks and grain variation are part of its personality rather than hidden defects."] },
@@ -119,6 +149,12 @@ export const posts = [
       "If it is a true antique, document age and condition; if not, describe it accurately as antique-look or vintage-finished.",
       "Show handles, hinges, base and lid operation in photographs or a short video.",
       "For heavy furniture, state delivery method, access requirements, packaging and the actual return or damage terms."
+    ],
+    faq: [
+      { question: "Is this wooden trunk a true antique or an antique-look piece?", answer: "The product listing should make that distinction clearly. A true antique needs documented age, source and condition; a new trunk with an aged finish should be described as hand-painted antique-look or vintage-finished." },
+      { question: "How do I know what will fit inside a wooden trunk?", answer: "Use the internal length, width, height and lid clearance, not just the outside measurements. An open photograph with everyday storage items can also help you judge real usable space." },
+      { question: "Can a wooden trunk be used as a coffee table?", answer: "Only use it that way if its actual construction, lid and load guidance support the use. Confirm the top stability, overall height and care needs before placing heavy objects or using it as a daily table." },
+      { question: "What should I confirm for furniture delivery?", answer: "Check weight, packaging, delivery method, access requirements for stairs or lifts, dispatch time and the process for reporting transit damage before payment." }
     ],
     sections: [
       { heading: "Why a trunk can be a smart purchase", body: ["A good trunk solves several small home problems at once. It can store linen, toys, seasonal textiles or keepsakes; become a coffee-table surface in a living room; work as a bed-end storage bench; or hold a tray in an entry. This everyday usefulness is what makes it more than a decorative purchase.", "A product page should show how much room the open lid needs and what the interior can realistically hold. Explain the outside measurements, interior capacity and safe uses so the customer can decide based on their space, not only on a beautiful styled image."] },
@@ -152,6 +188,12 @@ export const posts = [
       "Keep cultural or spiritual claims respectful and factual; do not promise outcomes that cannot be verified.",
       "Photograph the underside, stability and any protective pads that touch furniture surfaces."
     ],
+    faq: [
+      { question: "How do I choose the right size wooden elephant statue?", answer: "Compare the stated length, height, width and weight with the shelf or console where it will sit. A photo beside a book, hand or familiar object is useful for judging scale, but the exact measurements should guide the purchase." },
+      { question: "Is a wooden elephant statue a toy?", answer: "Treat it as decorative homeware unless the seller specifically states that it is a tested toy for a particular age group. Decorative carvings can have small parts, painted surfaces or a weight that makes them unsuitable for play." },
+      { question: "How should I display a carved elephant?", answer: "Choose a stable, level shelf or console with enough room around the carving. Avoid an edge where it can be knocked over, and use protective pads only if they are part of the actual product guidance." },
+      { question: "How do I care for carved wood?", answer: "Dust with a soft dry cloth and avoid persistent moisture, harsh chemicals and direct weather exposure. Follow the seller's instructions for the exact wood and finish used in the available piece." }
+    ],
     sections: [
       { heading: "A small decor piece with a strong effect", body: ["A carved elephant can fill the quiet space on a bookshelf, welcome visitors on an entry console or add personality to a home office. Give it room to breathe. A stack of books, a small plant and the elephant are often enough to create a complete vignette without turning the shelf into a cluttered display.", "This is also why it works as a gift. It is small enough to be personal but detailed enough to feel meaningful. A good listing should show its real scale so a customer does not mistake a palm-sized accent for a large tabletop sculpture."] },
       { heading: "What close-up images should show", body: ["The face, ears, feet and carved patterns are where handwork becomes visible. Photograph those areas clearly. Buyers should be able to see whether the carving is shallow or deep, whether the surface is smooth or textured, and how the finish responds to light.", "Words like premium are not enough on their own. Material, finish, dimensions, weight and care guidance answer more meaningful questions. Clear details are better selling tools because they help a shopper feel certain rather than pressured."] },
@@ -183,6 +225,12 @@ export const posts = [
       "Explain that hand-painted faces, colours and small details can vary slightly from one piece to another.",
       "If photographed in a children's room, clarify whether it is decor or a tested toy; do not present untested decor as a toy.",
       "Describe protective packaging for raised or fragile decorative parts before the customer orders."
+    ],
+    faq: [
+      { question: "What is a wooden chaukidar figure?", answer: "It is a decorative figure inspired by a chaukidar, meaning a guard or caretaker. The appeal is its hand-painted character and playful presence as a home decor accent." },
+      { question: "Where should I place a colourful wooden figure?", answer: "A bookshelf, entry console, home office or high display shelf gives the figure a clear visual role. Keep the surrounding arrangement simple and choose a stable surface away from frequent knocks." },
+      { question: "Will the painted face and colours vary?", answer: "Hand-painted work can vary in brushwork, facial expression and colour distribution. Ask for current photographs of the available piece so you can see the finish that will actually be dispatched." },
+      { question: "Can this figure be used as a children's toy?", answer: "No, not unless the actual listing identifies it as a tested toy for a stated age group. Decorative figures should be kept out of reach of young children when their construction or finish is not designed for play." }
     ],
     sections: [
       { heading: "Where this colourful figure works", body: ["A bookshelf, entry console, home office or high nursery shelf can all benefit from a small burst of colour. Keep the styling around the chaukidar figure calm: a few books, a simple pot or a neutral backdrop will let the hand-painted character take the lead.", "It also makes a lively gift because it has personality rather than generic polish. In product images, show it in a believable everyday setting. Buyers should be able to picture one simple corner of their own home becoming more cheerful, not feel they must recreate an entire showroom."] },
@@ -216,6 +264,12 @@ export const posts = [
       "Only make load or seating claims when they are based on actual construction or testing.",
       "Explain furniture delivery, assembly needs, packaging, access requirements and real return terms before purchase."
     ],
+    faq: [
+      { question: "How do I choose between a reclaimed wood coffee table and side table?", answer: "Compare the table height with your sofa or chair and measure the walking space around it. A coffee table needs comfortable clearance on all sides, while a side table should sit near the arm height of the seat it serves." },
+      { question: "Are marks and colour changes normal in reclaimed wood?", answer: "They can be. Grain shifts, filled marks, joins and tonal variation are part of reclaimed material, but they should be visible in honest close-up photographs rather than hidden by filters." },
+      { question: "Can I place heavy items on a reclaimed wood table?", answer: "Only rely on a load claim when the seller gives real construction or testing information. Confirm the top thickness, joinery and intended use instead of assuming that every rustic-looking table has the same strength." },
+      { question: "What delivery details matter for a wooden table?", answer: "Confirm the packed weight, delivery method, assembly needs, access requirements, dispatch timing and genuine return or damage-reporting terms before ordering." }
+    ],
     sections: [
       { heading: "Choosing coffee-table versus side-table scale", body: ["For a coffee table, consider the sofa height and the walking room around it before you look at style. A table that is too tall or too broad can make a living room uncomfortable. For a side table, compare the height to the arm of the chair or sofa and think about what it needs to hold: a lamp, a book, a glass of water or all three.", "A useful product page does not hide behind a single overall measurement. Show the top size, total height and leg spacing, ideally with a tape measure or a furnished-room reference. These facts let a customer buy with confidence instead of relying on camera perspective."] },
       { heading: "Why reclaimed marks are part of the value", body: ["Old timber can show tonal shifts, small filled holes, nail marks, grain movement or repaired areas. These features should not be edited out or disguised as something else. They are the reason a reclaimed piece feels different from uniform new furniture.", "The phrase natural variation is only useful when photos prove it. Show close-ups and a moving video of the surface where possible. Buyers who can see the real texture understand that they are getting a unique table, not a factory copy that happens to have a rustic filter."] },
@@ -247,6 +301,12 @@ export const posts = [
       "Say clearly whether carving is hand-carved or machine-cut; do not overstate the process.",
       "Show mounting points and explain whether screws or hardware are included.",
       "Only claim moisture suitability when the actual material and sealing make that claim accurate."
+    ],
+    faq: [
+      { question: "What is wooden jaali work?", answer: "Jaali refers to a lattice-like carved or cutwork pattern that creates open and solid areas. The product listing should say clearly whether the pattern is hand-carved or machine-cut and show close-up photos of the real work." },
+      { question: "How do I choose the right jaali panel size?", answer: "Measure the clear wall area and compare the panel width with the furniture below it. For a grouped arrangement, confirm whether the panels are designed as a matched set instead of assuming separate pieces will align." },
+      { question: "How should a jaali wall panel be mounted?", answer: "Check the panel's weight, depth, rear mounting points and included hardware. Use fixings suitable for the wall type, and ask for guidance when a large or heavy panel needs more secure installation." },
+      { question: "Can I use a wooden jaali panel in a damp space?", answer: "Only if the actual wood and sealant are stated as suitable for that environment. Do not assume that a decorative indoor wooden panel will tolerate bathroom moisture, rain or persistent humidity." }
     ],
     sections: [
       { heading: "Finding the right wall and proportion", body: ["A jaali panel can sit above a bed, behind a dining console, along an entry wall or around a quiet personal corner. Before buying, compare the panel width with the furniture below it. A very small panel can disappear on a broad wall, while an oversized one can make a compact room feel crowded.", "Sometimes a set of two or three panels is the better composition, but only when the product is genuinely made to work as a set. Show single-panel and grouped styling images so buyers can understand the possibilities without being forced to guess from one cropped photo."] },
@@ -280,6 +340,12 @@ export const posts = [
       "Do not call a decorative clasp a security lock; explain its actual function honestly.",
       "Show natural grain and hand-carved variation, especially for gifts where the customer expects a specific finish."
     ],
+    faq: [
+      { question: "How do I know whether a wooden jewelry box will fit my items?", answer: "Use the internal dimensions, compartment count and lid clearance rather than only the exterior size. A photo of the open box with everyday jewelry gives a useful sense of capacity, but the measurements are the deciding detail." },
+      { question: "Is the clasp on a wooden jewelry box a security lock?", answer: "Do not assume so. A decorative clasp may simply hold the lid closed. The listing should state whether there is a functional lock, what it includes and what level of security it is designed to provide." },
+      { question: "Will the hand-carved pattern and wood grain vary?", answer: "Natural grain and handmade carving can vary slightly from piece to piece. For a gift or a specific finish expectation, ask to see current photographs of the item that will be dispatched." },
+      { question: "How should I care for a carved jewelry box?", answer: "Dust it with a soft dry cloth, keep it away from persistent moisture and avoid harsh cleaners. Follow any care guidance that matches the actual wood, lining and finish of the product." }
+    ],
     sections: [
       { heading: "A box for daily order, not only display", body: ["A jewelry box can make a dressing table feel instantly calmer because everyday rings, earrings, watches and small keepsakes have one clear home. Show the box open with realistic items inside, so the buyer can judge what will fit instead of guessing from an empty, styled image.", "Different box sizes suit different needs. A compact box may be right for daily jewelry, while a larger one may work for sets and accessories. Describe the interior dimensions and compartment layout rather than using vague labels such as spacious or large."] },
       { heading: "Showing the value of hand carving", body: ["The detail of a hand-carved lid is visible only in close-up. Photograph the pattern depth, grain, corner finishing and surface texture in honest light. Avoid glossy editing that makes real wood colour impossible to judge.", "Small changes in grain or carved lines are natural in handmade work. State this clearly, but do not use it as an excuse to send something wildly different from the product images. Sharing the actual piece before dispatch is the clearest way to set the right expectation."] },
@@ -311,6 +377,12 @@ export const posts = [
       "State the hanging direction, real weight, rear hooks and required wall fixing clearly.",
       "If the mirror has a deliberate aged effect, describe it as such rather than presenting it as a standard clear mirror.",
       "Explain glass packaging, arrival inspection and the real process for reporting transit damage."
+    ],
+    faq: [
+      { question: "Which measurements matter for a carved wooden mirror frame?", answer: "Check both the total outer frame size and the visible mirror size. Also confirm depth, weight and hanging direction so the mirror fits the wall and reflects the part of the room you intend." },
+      { question: "How should a heavy wooden mirror be mounted?", answer: "Use the actual weight, rear hooks and wall type to select suitable fixings. For a heavy mirror, secure installation is more important than speed; ask the seller what hardware is included and seek professional help when needed." },
+      { question: "Will an aged-effect mirror look like a clear modern mirror?", answer: "Not always. If the glass or frame has a deliberate aged effect, it should be clearly shown and described. Ask for current close-up images so the finish is understood before purchase." },
+      { question: "What should I do when a mirror is delivered?", answer: "Inspect the glass, frame corners and rear hanging points promptly using the seller's stated process. Confirm the packaging, delivery terms and transit-damage reporting window before you place the order." }
     ],
     sections: [
       { heading: "How a mirror changes a room", body: ["An entry mirror is useful before leaving the house and can also bounce light into a smaller space. In a dining or living area, it can reflect a window, a plant or an open part of the room. The carved frame turns that practical function into a genuine decor statement.", "Before choosing the wall, think about what the mirror will reflect. A calm corner, light source or beautiful object is helpful; visible clutter or harsh direct glare is less so. This simple guidance helps a buyer get a better result as soon as the mirror is installed."] },

@@ -33,6 +33,7 @@ export function renderArticle(posts, post) {
             <p>In this story</p>
             ${post.sections.map((section, index) => `<a href="#section-${index + 1}">${index + 1}. ${section.heading}</a>`).join("")}
             <a href="#buying-guide">Before you order</a>
+            ${post.faq?.length ? `<a href="#faq">Common questions</a>` : ""}
           </nav>
           <div class="article-body">
             <p class="article-intro">${post.intro}</p>
@@ -44,9 +45,15 @@ export function renderArticle(posts, post) {
               ${index < 3 && images[index + 1] ? renderImagePlaceholder(images[index + 1], index + 2) : ""}`).join("")}
             <section class="buying-guide" id="buying-guide">
               <p class="buying-guide__eyebrow">Buy with confidence</p>
-              <h2>What to check before you order</h2>
+              <h2>Quick checklist</h2>
               <ul>${post.buyingChecklist.map((item) => `<li>${item}</li>`).join("")}</ul>
             </section>
+            ${post.faq?.length ? `
+              <section class="article-faq" id="faq" aria-labelledby="faq-heading">
+                <p class="article-faq__eyebrow">Frequently asked questions</p>
+                <h2 id="faq-heading">Common questions</h2>
+                ${post.faq.map((item) => `<details><summary>${item.question}</summary><p>${item.answer}</p></details>`).join("")}
+              </section>` : ""}
             <aside class="article-note">Handmade wood naturally varies in grain, colour and small carving details. Real photographs and accurate specifications are essential before any purchase.</aside>
             <section class="article-cta" aria-label="Ask about this product">
               <p>Shop with MarwarMade</p>
