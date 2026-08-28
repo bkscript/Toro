@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 92" role="img" aria-labelledby="title desc">
+  <title id="title">MarwarMade</title>
+  <desc id="desc">A clean MarwarMade wordmark with a minimal MM monogram.</desc>
+  <rect x="2" y="10" width="70" height="70" rx="16" fill="#c9362d"/>
+  <path d="M15 62V31l12 19 12-19v31m1 0V31l12 19 12-19v31" fill="none" stroke="#fffaf4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="95" y="60" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="800" letter-spacing="-2.8" fill="#241f1b">MARWAR</text>
+  <text x="326" y="60" font-family="Arial, Helvetica, sans-serif" font-size="47" font-weight="800" letter-spacing="-2.8" fill="#c9362d">MADE</text>
+</svg>
