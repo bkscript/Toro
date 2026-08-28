@@ -186,9 +186,10 @@ def header(current_file: Path) -> str:
     </header>"""
 
 
-def footer() -> str:
-    return """    <footer class="site-footer">
-      <a class="brand footer-brand" href="/" aria-label="MarwarMade home"><span class="brand-mark">MM</span><span>MARWAR<span>MADE</span></span></a>
+def footer(current_file: Path) -> str:
+    home = local_href(current_file, ROOT / "index.html")
+    return f"""    <footer class="site-footer">
+      <a class="brand footer-brand" href="{home}" aria-label="MarwarMade home"><span class="brand-mark">MM</span><span>MARWAR<span>MADE</span></span></a>
       <p>Homes with warmth, craft and a sense of place.</p>
       <p class="footer-note">© 2026 MarwarMade.</p>
     </footer>
@@ -223,6 +224,24 @@ def image_placeholder(description: str, index: int, hero: bool = False) -> str:
 </figure>"""
 
 
+def article_image(post: dict, index: int, current_file: Path, hero: bool = False) -> str:
+    assets = post.get("imageAssets", [])
+    description = post["images"][index - 1]
+    if len(assets) < index:
+        return image_placeholder(description, index, hero)
+    asset_path = ROOT / assets[index - 1]
+    image_class = " article-image--hero" if hero else ""
+    loading = "" if hero else ' loading="lazy"'
+    dimensions = post.get("imageDimensions", [])
+    dimension_attrs = ""
+    if len(dimensions) >= index:
+        dimension_attrs = f' width="{text(dimensions[index - 1]["width"])}" height="{text(dimensions[index - 1]["height"])}"'
+    return f'''<figure class="article-image{image_class}">
+  <img src="{local_href(current_file, asset_path)}" alt="{text(description)}"{dimension_attrs}{loading}>
+  <figcaption>{text(description)}</figcaption>
+</figure>'''
+
+
 def home_page(posts: list[dict]) -> str:
     output_file = ROOT / "index.html"
     canonical = f"{SITE_URL}/"
@@ -241,7 +260,7 @@ def home_page(posts: list[dict]) -> str:
       <div class="topic-strip" aria-label="Browse by collection"><span>Browse by</span>{chips}</div>
       <section class="journal-list" aria-labelledby="latest-stories"><div class="list-heading"><h2 id="latest-stories">Wooden decor guides</h2><p>{len(posts)} product stories</p></div><ol class="story-list">{rows}</ol></section>
     </main>
-""" + footer()
+""" + footer(output_file)
 
 
 def article_page(post: dict, posts: list[dict]) -> str:
@@ -259,13 +278,15 @@ def article_page(post: dict, posts: list[dict]) -> str:
         "author": {"@type": "Organization", "name": "MarwarMade Editorial"},
         "publisher": {"@type": "Organization", "name": "MarwarMade"},
     }
+    if post.get("imageAssets"):
+        schema["image"] = [f"{SITE_URL}/{asset}" for asset in post["imageAssets"]]
     toc = "\n".join(f'<a href="#section-{index}">{index}. {text(section["heading"])}</a>' for index, section in enumerate(post["sections"], 1))
     sections = []
     for index, section in enumerate(post["sections"], 1):
         paragraphs = "".join(f"<p>{text(paragraph)}</p>" for paragraph in section["body"])
         sections.append(f'<section id="section-{index}"><h2>{text(section["heading"])}</h2>{paragraphs}</section>')
         if index < 4:
-            sections.append(image_placeholder(post["images"][index], index + 1))
+            sections.append(article_image(post, index + 1, output_file))
     checklist = "".join(f"<li>{text(item)}</li>" for item in post["buyingChecklist"])
     faq = post.get("faq", [])
     faq_toc = '<a href="#faq">Common questions</a>' if faq else ""
@@ -280,11 +301,14 @@ def article_page(post: dict, posts: list[dict]) -> str:
             </section>''' if faq else ""
     related = [candidate for candidate in posts if candidate["topic"] == post["topic"] and candidate["slug"] != post["slug"]][:3]
     related_html = "".join(f'<a href="{local_href(output_file, ROOT / "blog" / candidate["slug"] / "index.html")}">{text(candidate["title"])} <span aria-hidden="true">↗</span></a>' for candidate in related)
+    product_slug = post.get("productSlug")
+    cta_href = local_href(output_file, ROOT / "products" / product_slug / "index.html") if product_slug else "https://marwarmade.com"
+    cta_label = "View this piece" if product_slug else "Check price &amp; availability"
     return page_head(title, post["excerpt"], canonical, "article", output_file, schema) + header(output_file) + f"""
     <main>
       <article class="article-wrap" style="--art-one:{text(post['palette'][0])};--art-two:{text(post['palette'][1])};--art-three:{text(post['palette'][2])}">
         <header class="article-head"><a class="back-link" href="{local_href(output_file, ROOT / 'index.html')}">← All articles</a><p class="article-category">{text(post['category'])}</p><h1>{text(post['title'])}</h1><p class="article-dek">{text(post['dek'])}</p><p class="article-byline">MARWARMADE EDITORIAL · {text(post['date'])} · {text(post['readTime'])}</p></header>
-        {image_placeholder(post['images'][0], 1, True)}
+        {article_image(post, 1, output_file, True)}
         <div class="article-layout">
           <nav class="article-toc" aria-label="Article sections"><p>In this story</p>{toc}<a href="#buying-guide">Before you order</a>{faq_toc}</nav>
           <div class="article-body">
@@ -293,13 +317,55 @@ def article_page(post: dict, posts: list[dict]) -> str:
             <section class="buying-guide" id="buying-guide"><p class="buying-guide__eyebrow">Buy with confidence</p><h2>Quick checklist</h2><ul>{checklist}</ul></section>
             {faq_html}
             <aside class="article-note">Handmade wood naturally varies in grain, colour and small carving details. Real photographs and accurate specifications are essential before any purchase.</aside>
-            <section class="article-cta" aria-label="Shop this product"><p>Shop with MarwarMade</p><h3>{text(post['cta'])}</h3><a href="https://marwarmade.com">Check price &amp; availability <span>↗</span></a></section>
+            <section class="article-cta" aria-label="Shop this product"><p>Shop with MarwarMade</p><h3>{text(post['cta'])}</h3><a href="{cta_href}">{cta_label} <span>↗</span></a></section>
             <section class="related" aria-labelledby="related-heading"><p class="related-label" id="related-heading">You may also like</p>{related_html}</section>
           </div>
         </div>
       </article>
     </main>
-""" + footer()
+""" + footer(output_file)
+
+
+def product_page() -> str:
+    output_file = ROOT / "products" / "hand-painted-wooden-bull-head" / "index.html"
+    canonical = f"{SITE_URL}/products/hand-painted-wooden-bull-head/"
+    title = "Hand-Painted Wooden Bull Head Wall Decor | MarwarMade"
+    description = "A vivid hand-painted wooden bull head wall decor with floral folk-art detail. View close-up, clean product and in-room styling images."
+    images = [
+        ("assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-modern-home-hero-1200x800.jpg", "Full view of the hand-painted bull head wall decor in a bright modern home setting"),
+        ("assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-handpaint-detail-1200x800.jpg", "Close-up of the hand-painted horns, ears and floral folk-art detail"),
+        ("assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-modern-living-room-1200x800.jpg", "In-room styling view of the hand-painted bull head above a contemporary wooden console"),
+        ("assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-modern-entryway-scale-1200x800.jpg", "Modern entryway view showing the hand-painted bull head with a contemporary wooden console"),
+    ]
+    gallery_items = []
+    for index, (asset, alt) in enumerate(images):
+        primary = " product-gallery__image--primary" if index == 0 else ""
+        loading = "" if index == 0 else ' loading="lazy"'
+        gallery_items.append(
+            f'<figure class="product-gallery__image{primary}"><img src="{local_href(output_file, ROOT / asset)}" alt="{text(alt)}" width="1200" height="800"{loading}></figure>'
+        )
+    gallery = "\n".join(gallery_items)
+    article_link = local_href(output_file, ROOT / "blog" / "wooden-carved-bull-head-wall-decor" / "index.html")
+    return page_head(title, description, canonical, "product", output_file) + header(output_file) + f"""
+    <main>
+      <article class="product-page">
+        <a class="back-link" href="{article_link}">← Read the styling guide</a>
+        <div class="product-layout">
+          <section class="product-gallery" aria-label="Product image gallery">{gallery}</section>
+          <section class="product-info">
+            <p class="eyebrow">Hand-painted wall decor</p>
+            <h1>Wooden Bull Head Wall Decor</h1>
+            <p class="product-dek">A joyful, hand-painted focal piece with floral folk-art detail, made for a wall that deserves more character than a generic print.</p>
+            <ul class="product-highlights"><li>Hand-painted floral folk-art finish</li><li>Bold yellow, black, red and gold colour story</li><li>Designed as a statement wall accent</li></ul>
+            <section class="product-clarity" id="purchase-details"><p>Before you order</p><h2>Confirm the details for the exact available piece.</h2><ul><li>Current price and availability</li><li>Exact height, width, depth and weight</li><li>Wood, finish and rear mounting hardware</li><li>Dispatch time, packaging and return terms</li></ul></section>
+            <a class="product-cta" href="https://link.amazon/B04tqSVrE" target="_blank" rel="sponsored noopener noreferrer" aria-label="View this wooden bull head on Amazon (opens in a new tab)"><span>View on Amazon</span><b aria-hidden="true">↗</b></a>
+            <p class="affiliate-disclosure">As an Amazon Associate, MarwarMade may earn from qualifying purchases.</p>
+            <p class="product-note">Hand-painted colour, grain and small details can vary. Check the live Amazon listing for the current item details before ordering.</p>
+          </section>
+        </div>
+      </article>
+    </main>
+""" + footer(output_file)
 
 
 def category_page(posts: list[dict], topic: str, slug: str, title: str, description: str) -> str:
@@ -309,7 +375,7 @@ def category_page(posts: list[dict], topic: str, slug: str, title: str, descript
     rows = "\n".join(story_row(post, output_file) for post in matching_posts)
     return page_head(f"{title} | MarwarMade", description, canonical, "website", output_file) + header(output_file) + f"""
     <main><section class="topic-view"><a class="back-link" href="{local_href(output_file, ROOT / 'index.html')}">← All articles</a><p class="eyebrow">MarwarMade collection guide</p><h1>{text(title)}</h1><p>{text(description)}</p><div class="list-heading"><h2>{len(matching_posts)} stories</h2><p>Browse the collection</p></div><ol class="story-list">{rows}</ol></section></main>
-""" + footer()
+""" + footer(output_file)
 
 
 def write_file(path: Path, content: str) -> None:
@@ -325,6 +391,7 @@ def build() -> None:
     write_file(ROOT / "index.html", home_page(posts))
     for post in posts:
         write_file(ROOT / "blog" / post["slug"] / "index.html", article_page(post, posts))
+    write_file(ROOT / "products" / "hand-painted-wooden-bull-head" / "index.html", product_page())
 
     categories = {
         "wall-decor": ("Wooden Wall Decor", "Helpful guides to sizing, styling and buying hand-carved wall pieces, jaali panels and wooden mirror frames."),
@@ -335,11 +402,11 @@ def build() -> None:
         topic = "furniture" if slug == "wooden-furniture" else slug
         write_file(ROOT / "collections" / slug / "index.html", category_page(posts, topic, slug, title, description))
 
-    sitemap_urls = [f"{SITE_URL}/", *[f"{SITE_URL}{article_path(post)}" for post in posts], *[f"{SITE_URL}/collections/{slug}/" for slug in categories]]
+    sitemap_urls = [f"{SITE_URL}/", *[f"{SITE_URL}{article_path(post)}" for post in posts], f"{SITE_URL}/products/hand-painted-wooden-bull-head/", *[f"{SITE_URL}/collections/{slug}/" for slug in categories]]
     sitemap = "\n".join(f"  <url><loc>{url}</loc></url>" for url in sitemap_urls)
     write_file(ROOT / "sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sitemap}\n</urlset>\n')
     write_file(ROOT / "robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
-    print(f"Built {len(posts)} articles, {len(categories)} collections, sitemap.xml and robots.txt.")
+    print(f"Built {len(posts)} articles, 1 product page, {len(categories)} collections, sitemap.xml and robots.txt.")
 
 
 if __name__ == "__main__":

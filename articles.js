@@ -12,11 +12,24 @@ export const posts = [
     intro: "A carved wooden bull head gives a plain wall an immediate point of view. Its value lies in the handwork: the carved contours, brush-painted finish and natural variation that make every piece feel individual rather than mass-produced.",
     palette: ["#9c3d2c", "#d6a23f", "#254f5a"],
     cta: "Check current availability and the real finish of a wooden bull head for your feature wall.",
+    productSlug: "hand-painted-wooden-bull-head",
+    imageAssets: [
+      "assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-modern-home-hero-1200x800.jpg",
+      "assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-handpaint-detail-1200x800.jpg",
+      "assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-modern-living-room-1200x800.jpg",
+      "assets/articles/wooden-carved-bull-head-wall-decor/wooden-bull-head-modern-entryway-scale-1200x800.jpg"
+    ],
+    imageDimensions: [
+      { width: "1200", height: "800" },
+      { width: "1200", height: "800" },
+      { width: "1200", height: "800" },
+      { width: "1200", height: "800" }
+    ],
     images: [
-      "Main front view of the complete bull head against a clean, plain wall",
-      "Close-up of the carved horns, facial details and hand-painted brushwork",
-      "Lifestyle image above an entry console or living-room sideboard",
-      "Scale image with a tape measure or furniture reference beside the piece"
+      "Full product view in a bright, modern home setting",
+      "Close-up of the horns, ears and hand-painted floral brushwork",
+      "Modern living-room styling above a contemporary walnut sideboard",
+      "Modern entryway view showing the 12-inch-tall wall accent in furniture context; confirm rear mounting details before ordering"
     ],
     buyingChecklist: [
       "State the wood type, exact height and width, depth from the wall and approximate weight.",
