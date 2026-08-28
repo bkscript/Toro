@@ -236,8 +236,8 @@ def article_image(post: dict, index: int, current_file: Path, hero: bool = False
     dimension_attrs = ""
     if len(dimensions) >= index:
         dimension_attrs = f' width="{text(dimensions[index - 1]["width"])}" height="{text(dimensions[index - 1]["height"])}"'
-    return f'''<figure class="article-image{image_class}">
-  <img src="{local_href(current_file, asset_path)}" alt="{text(description)}"{dimension_attrs}{loading}>
+    return f'''<figure class="article-image{image_class}" style="width:100%;">
+  <img src="{local_href(current_file, asset_path)}" alt="{text(description)}"{dimension_attrs}{loading} style="display:block;width:100%;height:auto;">
   <figcaption>{text(description)}</figcaption>
 </figure>'''
 
@@ -342,7 +342,7 @@ def product_page() -> str:
         primary = " product-gallery__image--primary" if index == 0 else ""
         loading = "" if index == 0 else ' loading="lazy"'
         gallery_items.append(
-            f'<figure class="product-gallery__image{primary}"><img src="{local_href(output_file, ROOT / asset)}" alt="{text(alt)}" width="1200" height="800"{loading}></figure>'
+            f'<figure class="product-gallery__image{primary}" style="width:100%;"><img src="{local_href(output_file, ROOT / asset)}" alt="{text(alt)}" width="1200" height="800"{loading} style="display:block;width:100%;height:auto;"></figure>'
         )
     gallery = "\n".join(gallery_items)
     article_link = local_href(output_file, ROOT / "blog" / "wooden-carved-bull-head-wall-decor" / "index.html")
