@@ -199,8 +199,8 @@ button { font: inherit; }
   .article-image { margin: 32px auto; }
   .product-page { width: min(100% - 32px, 1180px); padding: 39px 0 74px; }
   .product-layout { display: block; }
-  .product-gallery { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .product-gallery__image--primary { grid-column: 1 / -1; width: 82%; margin-inline: auto; }
+  .product-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .product-gallery__image--primary { grid-column: 1 / -1; width: min(220px, 68%); margin-inline: auto; }
   .product-info { position: static; padding-top: 34px; }
   .product-info h1 { font-size: clamp(38px, 11vw, 54px); }
   .product-dek { font-size: 19px; }
