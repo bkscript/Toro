@@ -102,6 +102,33 @@
       <p>The colour, craft and warmth of Jodhpur, for homes everywhere.</p>
       <p class="footer-note">© 2026 MarwarMade.</p>
     </footer>
+    <section class="whatsapp-card" id="whatsapp-card" data-whatsapp-card hidden aria-labelledby="whatsapp-card-title">
+      <header class="whatsapp-card__header">
+        <button class="whatsapp-card__close" type="button" data-whatsapp-close aria-label="Close WhatsApp chat">&times;</button>
+        <span class="whatsapp-card__mark"><img src="../../assets/brand/marwarmade-mark.svg" width="48" height="48" alt=""></span>
+        <div>
+          <h2 id="whatsapp-card-title">MarwarMade</h2>
+          <p>Typically replies within an hour</p>
+        </div>
+      </header>
+      <div class="whatsapp-card__body">
+        <div class="whatsapp-card__bubble">
+          <p class="whatsapp-card__sender">MarwarMade</p>
+          <p>Chat with us on WhatsApp!</p>
+          <time data-whatsapp-time>Now</time>
+        </div>
+        <form class="whatsapp-card__composer" data-whatsapp-form data-whatsapp-phone="919352531913" novalidate>
+          <label class="whatsapp-card__label" for="whatsapp-message">Your WhatsApp message</label>
+          <textarea id="whatsapp-message" data-whatsapp-message rows="2">Hello! I'm interested in your products. Can you help me?</textarea>
+          <button type="submit" aria-label="Open WhatsApp with this message"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 3 20 9-20 9 3-9-3-9Zm4.8 9L4.7 18.3 17.2 12 4.7 5.7 6.8 12Z"/></svg></button>
+        </form>
+      </div>
+    </section>
+    <button class="whatsapp-float" type="button" data-whatsapp-toggle aria-expanded="false" aria-controls="whatsapp-card" aria-label="Open WhatsApp chat">
+      <span class="whatsapp-float__ripple" aria-hidden="true"></span>
+      <img src="../../assets/brand/whatsapp-mark.svg" width="34" height="34" alt="">
+      <span class="whatsapp-float__notification" aria-hidden="true"></span>
+    </button>
   </div>
 </body>
 </html>

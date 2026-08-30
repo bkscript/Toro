@@ -102,7 +102,7 @@ button { font: inherit; }
 .home-product-card:hover { border-color: #cdbcae; box-shadow: 0 16px 34px rgba(45, 35, 27, .11); transform: translateY(-3px); }
 .home-product-card figure { min-width: 0; aspect-ratio: 1 / 1; margin: 0; overflow: hidden; background: var(--sand); }
 .home-product-card picture { display: block; height: 100%; }
-.home-product-card img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .3s ease; }
+.home-product-card img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .3s ease; }
 .home-product-card:hover img { transform: scale(1.02); }
 .home-product-card > div { display: flex; flex: 1; flex-direction: column; padding: clamp(24px, 3.4vw, 34px); }
 .home-product-card__category { margin: 0 0 11px; color: var(--clay); font: 500 10px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
@@ -221,7 +221,7 @@ a.guide-count:hover { color: var(--clay); }
 .catalog-card { overflow: hidden; border: 1px solid var(--line); background: var(--paper); transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 .catalog-card:hover { border-color: #cdbcae; box-shadow: 0 14px 30px rgba(45, 35, 27, .1); transform: translateY(-3px); }
 .catalog-card figure { margin: 0; aspect-ratio: 1 / 1; overflow: hidden; background: var(--sand); }
-.catalog-card img { width: 100%; height: 100%; object-fit: contain; transition: transform .3s ease; }
+.catalog-card img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .3s ease; }
 .catalog-card:hover img { transform: scale(1.025); }
 .catalog-card > div { padding: 20px; }
 .catalog-card > div > p { margin: 0 0 9px; color: var(--clay); font: 500 10px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
@@ -240,10 +240,10 @@ a.guide-count:hover { color: var(--clay); }
 .product-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(330px, .86fr); gap: clamp(32px, 5vw, 62px); align-items: start; margin-bottom: clamp(42px, 6vw, 70px); }
 .product-image-box { min-width: 0; }
 .product-main-image { aspect-ratio: 1 / 1; margin: 0; overflow: hidden; border: 1px solid var(--line); background: #f2ede5; }
-.product-main-image img { width: 100%; height: 100%; object-fit: contain; }
+.product-main-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .product-thumb-row { display: flex; gap: 9px; overflow-x: auto; margin-top: 11px; padding-bottom: 3px; scrollbar-width: thin; }
 .product-thumb { width: clamp(56px, 16vw, 72px); aspect-ratio: 1 / 1; height: auto; flex: 0 0 auto; padding: 2px; overflow: hidden; border: 1px solid var(--line); background: var(--paper); cursor: pointer; }
-.product-thumb img { width: 100%; height: 100%; object-fit: contain; }
+.product-thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .product-thumb:hover, .product-thumb[aria-current="true"] { border: 2px solid var(--clay); }
 .product-image-note { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 .product-info { min-width: 0; }
@@ -289,6 +289,40 @@ a.guide-count:hover { color: var(--clay); }
 .footer-brand { color: var(--ink); }
 .site-footer p { margin: 0; line-height: 1.5; }
 .footer-note { text-align: right; font: 10px var(--mono); }
+.whatsapp-float { position: fixed; z-index: 50; right: 15px; bottom: 75px; display: grid; width: 56px; aspect-ratio: 1; place-items: center; border: 0; border-radius: 0; background: transparent; color: #35a936; box-shadow: none; transition: transform .2s ease, color .2s ease; cursor: pointer; }
+.whatsapp-float::before { content: ""; position: absolute; z-index: 0; inset: -4px; border: 2px solid rgba(151, 228, 157, .62); border-radius: 50%; background: transparent; filter: blur(.25px); animation: whatsapp-icon-aura 1.6s ease-out infinite; }
+.whatsapp-float::after { content: ""; position: absolute; z-index: 1; width: 52px; aspect-ratio: 1; border-radius: 50%; background: #fff; }
+.whatsapp-float__ripple { position: absolute; z-index: 0; inset: -4px; border: 2px solid rgba(151, 228, 157, .46); border-radius: 50%; background: transparent; filter: blur(.25px); animation: whatsapp-icon-aura 1.6s ease-out -.8s infinite; }
+.whatsapp-float img { position: relative; z-index: 2; width: 47px; height: 47px; }
+.whatsapp-float__notification { position: absolute; z-index: 3; top: 6px; right: 6px; width: 12px; aspect-ratio: 1; border-radius: 50%; background: #df2d25; box-shadow: 0 1px 5px rgba(105, 22, 17, .34); }
+.whatsapp-float:hover { transform: translateY(-2px) scale(1.04); }
+.whatsapp-float:focus-visible { outline: 3px solid var(--mustard); outline-offset: 3px; }
+@keyframes whatsapp-icon-aura { 0% { opacity: .72; transform: scale(1); } 100% { opacity: 0; transform: scale(1.65); } }
+.whatsapp-card { position: fixed; z-index: 49; right: 15px; bottom: 147px; display: flex; flex-direction: column; width: min(340px, calc(100vw - 30px)); min-width: 0; max-height: min(350px, calc(100dvh - 156px)); overflow: hidden; border: 1px solid rgba(31, 28, 25, .12); border-radius: 18px; background: #e9ded2; color: var(--ink); box-shadow: 0 18px 46px rgba(31, 28, 25, .25); }
+.whatsapp-card[hidden] { display: none; }
+.whatsapp-card__header { position: relative; display: flex; align-items: center; gap: 10px; min-width: 0; padding: 12px 48px 12px 14px; background: #006d61; color: #fff; }
+.whatsapp-card__mark { position: relative; display: grid; flex: 0 0 auto; width: 48px; aspect-ratio: 1; place-items: center; border-radius: 50%; background: #fff; }
+.whatsapp-card__mark img { display: block; width: 100%; height: 100%; border-radius: inherit; object-fit: cover; }
+.whatsapp-card__mark::after { content: ""; position: absolute; right: 0; bottom: 0; width: 12px; aspect-ratio: 1; border-radius: 50%; background: #a8ff62; box-shadow: 0 0 0 1px #176b31, 0 0 0 4px rgba(18, 128, 58, .32), 0 0 13px rgba(18, 128, 58, .9); animation: whatsapp-online-aura 1.8s ease-in-out infinite; }
+@keyframes whatsapp-online-aura { 0%, 100% { box-shadow: 0 0 0 1px #176b31, 0 0 0 4px rgba(18, 128, 58, .25), 0 0 9px rgba(18, 128, 58, .68); } 50% { box-shadow: 0 0 0 1px #176b31, 0 0 0 7px rgba(18, 128, 58, .08), 0 0 18px rgba(18, 128, 58, .98); } }
+@media (prefers-reduced-motion: reduce) { .whatsapp-card__mark::after, .whatsapp-float::before, .whatsapp-float__ripple { animation: none; } }
+.whatsapp-card h2 { margin: 0; font: 800 clamp(16px, 4.5vw, 19px)/1.1 var(--sans); letter-spacing: -.015em; }
+.whatsapp-card__header p { margin: 4px 0 0; color: rgba(255, 255, 255, .88); font: 700 10px/1.2 var(--sans); }
+.whatsapp-card__body { display: flex; flex: 1 1 auto; flex-direction: column; min-height: 190px; background: #e9ded2; }
+.whatsapp-card__bubble { width: min(210px, calc(100% - 44px)); margin: 24px 0 auto 16px; padding: 13px 16px 9px; border-radius: 0 14px 14px 14px; background: #fff; box-shadow: 0 1px 6px rgba(31, 28, 25, .12); }
+.whatsapp-card__bubble p { margin: 0; font-size: 15px; line-height: 1.45; }
+.whatsapp-card__bubble .whatsapp-card__sender { margin-bottom: 7px; color: #999; font: 700 14px/1.2 var(--sans); }
+.whatsapp-card__bubble time { display: block; margin-top: 10px; color: #999; font-size: 14px; line-height: 1; text-align: right; }
+.whatsapp-card__close { position: absolute; top: 17px; right: 14px; display: grid; width: 28px; aspect-ratio: 1; place-items: center; border: 0; border-radius: 50%; background: transparent; color: rgba(255, 255, 255, .86); font-size: 29px; line-height: 1; cursor: pointer; }
+.whatsapp-card__close:hover { background: rgba(255, 255, 255, .14); color: #fff; }
+.whatsapp-card__close:focus-visible, .whatsapp-card__composer :focus-visible { outline: 3px solid var(--mustard); outline-offset: 2px; }
+.whatsapp-card__composer { display: grid; grid-template-columns: minmax(0, 1fr) 44px; align-items: center; gap: 6px; width: 100%; margin-top: 18px; padding: 10px 12px; border-top: 1px solid rgba(31, 28, 25, .07); background: #fff; }
+.whatsapp-card__label { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.whatsapp-card__composer textarea { box-sizing: border-box; display: block; width: 100%; min-width: 0; height: 46px; resize: none; border: 0; border-radius: 0; background: transparent; color: var(--ink); font: 14px/1.4 var(--sans); }
+.whatsapp-card__composer textarea:focus { outline: 0; }
+.whatsapp-card__composer button { display: grid; width: 44px; aspect-ratio: 1; place-items: center; border: 0; background: transparent; color: #087a6d; cursor: pointer; }
+.whatsapp-card__composer button:hover { color: #005c52; }
+.whatsapp-card__composer svg { width: 28px; height: 28px; fill: currentColor; }
 
 @media (max-width: 760px) {
   .site-header { height: 70px; }
