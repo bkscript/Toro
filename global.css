@@ -100,9 +100,9 @@ button { font: inherit; }
 .home-featured-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 22px; }
 .home-product-card { display: flex; flex-direction: column; overflow: hidden; border: 1px solid var(--line); background: var(--paper); transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 .home-product-card:hover { border-color: #cdbcae; box-shadow: 0 16px 34px rgba(45, 35, 27, .11); transform: translateY(-3px); }
-.home-product-card figure { min-width: 0; aspect-ratio: 3 / 2; margin: 0; overflow: hidden; background: var(--sand); }
+.home-product-card figure { min-width: 0; aspect-ratio: 1 / 1; margin: 0; overflow: hidden; background: var(--sand); }
 .home-product-card picture { display: block; height: 100%; }
-.home-product-card img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.home-product-card img { display: block; width: 100%; height: 100%; object-fit: contain; transition: transform .3s ease; }
 .home-product-card:hover img { transform: scale(1.02); }
 .home-product-card > div { display: flex; flex: 1; flex-direction: column; padding: clamp(24px, 3.4vw, 34px); }
 .home-product-card__category { margin: 0 0 11px; color: var(--clay); font: 500 10px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
@@ -220,8 +220,8 @@ a.guide-count:hover { color: var(--clay); }
 .catalog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 360px)); gap: 22px; }
 .catalog-card { overflow: hidden; border: 1px solid var(--line); background: var(--paper); transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 .catalog-card:hover { border-color: #cdbcae; box-shadow: 0 14px 30px rgba(45, 35, 27, .1); transform: translateY(-3px); }
-.catalog-card figure { margin: 0; aspect-ratio: 3 / 2; overflow: hidden; background: var(--sand); }
-.catalog-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.catalog-card figure { margin: 0; aspect-ratio: 1 / 1; overflow: hidden; background: var(--sand); }
+.catalog-card img { width: 100%; height: 100%; object-fit: contain; transition: transform .3s ease; }
 .catalog-card:hover img { transform: scale(1.025); }
 .catalog-card > div { padding: 20px; }
 .catalog-card > div > p { margin: 0 0 9px; color: var(--clay); font: 500 10px var(--mono); letter-spacing: .12em; text-transform: uppercase; }
@@ -239,11 +239,11 @@ a.guide-count:hover { color: var(--clay); }
 .product-breadcrumb a:hover { color: var(--clay); }
 .product-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(330px, .86fr); gap: clamp(32px, 5vw, 62px); align-items: start; margin-bottom: clamp(42px, 6vw, 70px); }
 .product-image-box { min-width: 0; }
-.product-main-image { aspect-ratio: 3 / 2; margin: 0; overflow: hidden; border: 1px solid var(--line); background: #f2ede5; }
-.product-main-image img { width: 100%; height: 100%; object-fit: cover; }
+.product-main-image { aspect-ratio: 1 / 1; margin: 0; overflow: hidden; border: 1px solid var(--line); background: #f2ede5; }
+.product-main-image img { width: 100%; height: 100%; object-fit: contain; }
 .product-thumb-row { display: flex; gap: 9px; overflow-x: auto; margin-top: 11px; padding-bottom: 3px; scrollbar-width: thin; }
-.product-thumb { width: 70px; height: 58px; flex: 0 0 auto; padding: 2px; overflow: hidden; border: 1px solid var(--line); background: var(--paper); cursor: pointer; }
-.product-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.product-thumb { width: clamp(56px, 16vw, 72px); aspect-ratio: 1 / 1; height: auto; flex: 0 0 auto; padding: 2px; overflow: hidden; border: 1px solid var(--line); background: var(--paper); cursor: pointer; }
+.product-thumb img { width: 100%; height: 100%; object-fit: contain; }
 .product-thumb:hover, .product-thumb[aria-current="true"] { border: 2px solid var(--clay); }
 .product-image-note { margin: 12px 0 0; color: var(--muted); font-size: 11px; line-height: 1.45; }
 .product-info { min-width: 0; }
@@ -350,7 +350,6 @@ a.guide-count:hover { color: var(--clay); }
   .product-info { margin-top: 28px; }
   .product-info h1 { font-size: clamp(36px, 10vw, 51px); }
   .product-dek { font-size: 18px; }
-  .product-thumb { width: 62px; height: 52px; }
   .product-order-panel { padding: 19px; }
   .product-cta { padding: 18px 19px; }
   .product-pros-cons { grid-template-columns: 1fr; gap: 14px; }
