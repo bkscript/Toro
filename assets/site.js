@@ -56,19 +56,21 @@
   const whatsappClose = document.querySelector("[data-whatsapp-close]");
 
   if (whatsappToggle && whatsappCard && whatsappClose) {
+    const isWhatsappCardOpen = () => whatsappCard.classList.contains("is-open");
     const setWhatsappCardOpen = (open, returnFocus = false) => {
-      whatsappCard.hidden = !open;
+      whatsappCard.classList.toggle("is-open", open);
+      whatsappCard.setAttribute("aria-hidden", String(!open));
       whatsappToggle.setAttribute("aria-expanded", String(open));
       if (returnFocus) whatsappToggle.focus();
     };
 
-    whatsappToggle.addEventListener("click", () => setWhatsappCardOpen(whatsappCard.hidden));
+    whatsappToggle.addEventListener("click", () => setWhatsappCardOpen(!isWhatsappCardOpen()));
     whatsappClose.addEventListener("click", () => setWhatsappCardOpen(false, true));
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && !whatsappCard.hidden) setWhatsappCardOpen(false, true);
+      if (event.key === "Escape" && isWhatsappCardOpen()) setWhatsappCardOpen(false, true);
     });
     document.addEventListener("click", (event) => {
-      if (!whatsappCard.hidden && !whatsappCard.contains(event.target) && !whatsappToggle.contains(event.target)) {
+      if (isWhatsappCardOpen() && !whatsappCard.contains(event.target) && !whatsappToggle.contains(event.target)) {
         setWhatsappCardOpen(false);
       }
     });
